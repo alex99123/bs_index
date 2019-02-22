@@ -1914,7 +1914,7 @@ ul {
     }
 
     .onepage-nav .onepage-menu .sub-menu li {
-        background-color: #111;
+        background-color: white;
     }
 
     .onepage-nav .onepage-menu .sub-menu li:first-child {
@@ -1979,6 +1979,7 @@ ul {
     .onepage-nav .onepage-menu .sub-menu li > a {
         font-size: 14px;
         transition: all 300ms ease;
+        color: #748182;
     }
 
     .onepage-nav .onepage-menu .sub-menu li:hover > a {
