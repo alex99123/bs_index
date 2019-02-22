@@ -1957,13 +1957,9 @@ ul {
         color: #19c2c9;
     }
 
-    .onepage-nav .onepage-menu .current-menu-parent > a,
-    .onepage-nav .onepage-menu .current-menu-item > a {
-        color: #19c2c9;
-    }
-
     .onepage-nav .onepage-menu .sub-menu {
-        width: 200px;
+        white-space: nowrap;
+        height: 50px;
         position: absolute;
         top: 100%;
         z-index: -1;
@@ -2119,11 +2115,9 @@ ul {
     .onepage-menu li a:after {
         content: '';
         position: absolute;
-        bottom: 5px;
         left: 20px;
         width: 0;
         height: 2px;
-        background-color: #19c2c9;
         transition: all .3s ease;
     }
 
