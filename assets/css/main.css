@@ -2253,6 +2253,7 @@ ul {
 }
 
 .hero__text {
+    width: auto;
     font-size: 20px;
     color: #fff;
 }
