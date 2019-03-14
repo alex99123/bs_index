@@ -1,0 +1,117 @@
+@keyframes  modalChange{
+    0% {
+        -webkit-transform: scale(.2);
+        -moz-transform: scale(.2);
+        -ms-transform: scale(.2);
+        -o-transform: scale(.2);
+        transform: scale(.2);
+    }
+    40% {
+        -webkit-transform: scale(.4);
+        -moz-transform: scale(.4);
+        -ms-transform: scale(.4);
+        -o-transform: scale(.4);
+        transform: scale(.4);
+    }
+    60% {
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -ms-transform: scale(.6);
+        -o-transform: scale(.6);
+        transform: scale(.6);
+    }
+    80% {
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+        transform: scale(.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.modalWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, .9);
+    overflow: hidden;
+}
+
+.modalContent {
+    width: 60%;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -30%;
+    margin-top: -400px;
+    padding: 2px 0;
+    font: normal 12px/24px '微软雅黑', Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 4px #ccc;
+    animation: .25s modalChange;
+    -webkit-animation: .25s modalChange;
+}
+
+.modalHead {
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(56,65,85,.8);
+}
+
+.modalHead span {
+    font-size: 1.5em;
+    line-height: 2;
+    font-weight: bolder;
+    transition: all .2s ease-in-out;
+}
+
+.modalHead span:nth-child(2) {
+    float: right;
+    cursor: pointer;
+}
+
+.modalHead span:nth-child(2):hover {
+    opacity: .5;
+}
+
+.modalBody {
+    padding: 10px 20px;
+    height: calc(800px - 37px);
+    overflow-y: auto;
+}
+
+.modalBody>p:first-child {
+    font-size: 16px;
+}
+
+.mainPararaph {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.mainPararaph img {
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.subContent {
+    padding-left: 40px;
+}
+
+.subContent p {
+    font-size: 14px;
+    line-height: 2;
+}
