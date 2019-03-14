@@ -53,12 +53,12 @@
 
 .modalContent {
     width: 60%;
-    height: 800px;
+    /* height: 800px; */
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -30%;
-    margin-top: -400px;
+    /* margin-top: -400px; */
     padding: 2px 0;
     font: normal 12px/24px '微软雅黑', Arial, Helvetica, sans-serif;
     color: #333;
@@ -71,7 +71,6 @@
 
 .modalHead {
     padding: 0 10px;
-    /* border-bottom: 1px solid rgba(56,65,85,.8); */
 }
 
 .modalHead span {
@@ -97,8 +96,44 @@
 
 .modalBody {
     padding: 10px 50px;
-    height: 800px;
+    /* height: 800px; */
     overflow-y: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .modalContent, .modalBody {
+        height: 400px;
+    }
+    .modalContent {
+        margin-top: -200px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .modalContent, .modalBody {
+        height: 600px;
+    }
+    .modalContent {
+        margin-top: -300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .modalContent, .modalBody {
+        height: 800px;
+    }
+    .modalContent {
+        margin-top: -400px;
+    }
+}
+
+@media screen and (min-width: 2160px) {
+    .modalContent, .modalBody {
+        height: 1000px;
+    }
+    .modalContent {
+        margin-top: -500px;
+    }
 }
 
 .modalBody .modalTitle {
