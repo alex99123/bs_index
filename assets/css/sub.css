@@ -109,7 +109,25 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .modalContent, .modalBody {
+        height: 400px;
+    }
+    .modalContent {
+        margin-top: -200px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
+    .modalContent, .modalBody {
+        height: 400px;
+    }
+    .modalContent {
+        margin-top: -200px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
     .modalContent, .modalBody {
         height: 600px;
     }
@@ -118,7 +136,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
     .modalContent, .modalBody {
         height: 800px;
     }
@@ -127,12 +145,13 @@
     }
 }
 
+
 @media screen and (min-width: 2160px) {
     .modalContent, .modalBody {
-        height: 1000px;
+        height: 800px;
     }
     .modalContent {
-        margin-top: -500px;
+        margin-top: -400px;
     }
 }
 
