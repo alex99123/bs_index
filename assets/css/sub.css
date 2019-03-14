@@ -1,4 +1,4 @@
-@keyframes  modalChange{
+@keyframes modalChange {
     0% {
         -webkit-transform: scale(.2);
         -moz-transform: scale(.2);
@@ -6,6 +6,7 @@
         -o-transform: scale(.2);
         transform: scale(.2);
     }
+
     40% {
         -webkit-transform: scale(.4);
         -moz-transform: scale(.4);
@@ -13,6 +14,7 @@
         -o-transform: scale(.4);
         transform: scale(.4);
     }
+
     60% {
         -webkit-transform: scale(.6);
         -moz-transform: scale(.6);
@@ -20,6 +22,7 @@
         -o-transform: scale(.6);
         transform: scale(.6);
     }
+
     80% {
         -webkit-transform: scale(.8);
         -moz-transform: scale(.8);
@@ -27,6 +30,7 @@
         -o-transform: scale(.8);
         transform: scale(.8);
     }
+
     100% {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -59,6 +63,7 @@
     font: normal 12px/24px '微软雅黑', Arial, Helvetica, sans-serif;
     color: #333;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 2px 2px 20px 4px #ccc;
     animation: .25s modalChange;
     -webkit-animation: .25s modalChange;
@@ -66,7 +71,7 @@
 
 .modalHead {
     padding: 0 10px;
-    border-bottom: 1px solid rgba(56,65,85,.8);
+    /* border-bottom: 1px solid rgba(56,65,85,.8); */
 }
 
 .modalHead span {
@@ -77,27 +82,34 @@
 }
 
 .modalHead span:nth-child(2) {
-    float: right;
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
 }
 
 .modalHead span:nth-child(2):hover {
-    opacity: .5;
+    background: rgba(211, 211, 211, .2);
 }
 
 .modalBody {
-    padding: 10px 20px;
-    height: calc(800px - 37px);
+    padding: 10px 50px;
+    height: 800px;
     overflow-y: auto;
 }
 
-.modalBody>p:first-child {
-    font-size: 16px;
+.modalBody .modalTitle {
+    font-size: 18px;
+    line-height: 2;
 }
 
 .mainPararaph {
     font-size: 16px;
     line-height: 2;
+    padding: 0 20px;
 }
 
 .mainPararaph img {
@@ -114,4 +126,27 @@
 .subContent p {
     font-size: 14px;
     line-height: 2;
+}
+
+/* 滚动条凹槽的颜色，还可以设置边框属性 */
+::-webkit-scrollbar-track-piece {
+    background-color: #f8f8f8;
+}
+
+/* 滚动条的宽度 */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+/* 滚动条的设置 */
+::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    background-clip: padding-box;
+    min-height: 28px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
 }

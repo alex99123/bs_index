@@ -17,17 +17,19 @@ $(document).ready(function () {
     // 解决方案详情
     var solutionIndex = 0;
 
-    var solutionModal = new CreateModal();
+    var solutionImg = new CreateModal('.solution_img');
+    var solutionTitle = new CreateModal('.solution_title');
+    var solutionAuthor = new CreateModal('.solution_author');
 
-    function CreateModal () { 
-        $('.solution').on('click', function(e) {
+    function CreateModal (selector) { 
+        $(selector).on('click', function(e) {
             e.preventDefault();
-            solutionIndex = $('.solution').index(this);
+            solutionIndex = $(selector).index(this);
     
             $('.modalWrap').html('');
             var modalWrapDiv = $('<div class="modalWrap">' +
                 '<div class="modalContent style="width: 60%; height: 600px; position: absolute; left: 50%; top: 50%; ">' +
-                    '<div class="modalHead"><span></span><span>X</span></div>' +
+                    '<div class="modalHead"><span></span><span><img src="assets/img/common/Icon-close.png" alt="""></span></div>' +
                     '<div class="modalBody"></div>' +
                 '</div>' +
             '</div>');
@@ -37,8 +39,7 @@ $(document).ready(function () {
     
             switch (solutionIndex) {
                 case 0:
-                    $('.modalHead span:first-child').html('运维托管解决方案');
-                    $('.modalBody').html('<p><b>运维托管解决方案</b></p>' +
+                    $('.modalBody').html('<p class="mainPararaph"><b>运维托管解决方案</b></p>' +
                         '<p class="mainPararaph"><b>方案描述：</b>博思云为提供完善的运维托管服务，在架构设计、监控管理、安全管理、运维管理、应急响应、优化管理等几个方面为客户提供服务。</p>' +
                         '<div class="subContent">' +
                             '<p><b>架构设计：</b>帮助客户设计适用于AWS的业务架构，通过重构、替换等方式，尽可能使用AWS托管服务，从高可用、弹性、持久性、灾备恢复、成本报价等多个方面进行综合考虑，为客户提供EC2、RDS、VPC、AS、ELB、DevOps、AI等多个方面最优的设计方案。</p>' +
@@ -53,8 +54,8 @@ $(document).ready(function () {
                     )
                     break;
                 case 1:
-                    $('.modalHead span:first-child').html('日志管理与集成解决方案');
-                    $('.modalBody').html('<p class="mainPararaph"><b>EKK日志管理解决方案：</b><img src="assets/img/portfolio/Solution-EkkLog.png" alt=""></p>' +
+                    $('.modalBody').html('<p class="modalTitle"><b>日志管理与集成解决方案</b></p>' + 
+                        '<p class="mainPararaph"><b>EKK日志管理解决方案：</b><img src="assets/img/portfolio/Solution-EkkLog.png" alt=""></p>' +
                         '<p class="mainPararaph"><b>方案描述：</b>基于流行的ELK（Elasticsearch,Logstash, and Kibana）系统改造成为更加精简的托管式的适应于AWS的EKK解决方案（AmazonElasticsearch Service, Amazon Kinesis, andKibana）。采用Kinesis替代Logstash，使用AWS托管的Elasticsearch服务提供更加稳定高效的运行环境。通过KinesisAgent收集目标机器上的特定信息/日志，传输至Kinesis处理，备份至S3同时汇总数据至Elasticsearch进行自定义的可视化展示。为了更加精准的把握用户使用习惯等数据，采用Lambda实时收集并传输ELB的日志信息至S3与Elasticsearch。</p>' +
                         '<p class="mainPararaph"><b>应用场景：</b>EKK是一套基于AWS的实时日志分析管理平台，通过Agent可以收集系统日志、应用程序日志、安全日志等，并集中处理后可以特定方式进行可视化展示。通常在机器数过大时，日志分布在上百台机器上，难以收集且难以分析；即便使用手工/半手工方式收集了日志信息，采用Grep/Awk/Wc等方式进行统计检索效率也极其低下。因此在大机器数/大分布式集群等条件下采用博思提供的EKK日志管理方案能够很好的解决日志收集、管理、分析与可视化展示的问题。</p>' + 
                         '<p class="mainPararaph"><b>方案优势：</b>相比传统的手工/脚本日志管理方式，更加高效且稳定，能够极其高效的收集并分析数百台机器的日志信息，并以自定义的方式进行可视化展示；相比，普通的ELK架构，EKK架构则更加适用于AWS平台，采用了多种AWS托管服务，能够有效降低运维压力与成本，同时不用担心服务性能瓶颈。</p>' +
@@ -65,8 +66,8 @@ $(document).ready(function () {
                     )
                     break;
                 default:
-                    $('.modalHead span:first-child').html('大数据与AI解决方案');
-                    $('.modalBody').html('<p class="mainPararaph"><b>大数据分析解决方案：</b><img src="assets/img/portfolio/Solution-BigData.png" alt=""></p>' +
+                    $('.modalBody').html('<p class="modalTitle"><b>大数据与AI解决方案</b></p>' + 
+                    '<p class="mainPararaph"><b>大数据分析解决方案：</b><img src="assets/img/portfolio/Solution-BigData.png" alt=""></p>' +
                     '<p class="mainPararaph"><b>方案描述：</b>在AWS上构建完整的大数据分析体系，可以采用HIVE+Spark+HDFS的架构使用EC2自建或采用由AWS提供的ElasticMapReduce（EMR）+SimpleStorageService+RedShift架构来完成大数据分析的目标。对于HIVE与Spark的自建架构，博思云为不推荐使用，自建架构是为初级的云计算服务使用方式，抛弃了很多云上的优势。对此，博思云为建议客户采用AWSService完成整个大数据架构。在基于AWS的大数据方案中，我们采用了AWS提供的EMR服务，EMR服务可以简单理解为托管的Hadoop集群，其中包含了MapReduce与HDFS等运算存储集群。基于EMR，我们帮助客户加工与处理结构化与非结构化业务数据、按照客户的需求，分析与开发出数据业务特征处理算法，对结构化与非结构化的数据进行清洗（去重、去残缺、去错误、一致性检查）、脱敏（条目混淆、加密）、数据格式转换（字段类型调整、表数据拆分/合并、数据粒度转换）等。最终将已完成转换的有效数据以适合于数据仓库加载的格式（例如：CSV）导出并转存在S3存储中，并通过加载工具将有效数据集导入至Redshift数据仓库，作为后续企业BI、AI等业务的数据来源。对于安全与资源管理方面，博思除采用IAM之外，还会集成一套自有资源与权限管理系统，可实现单点登陆SSO，日志审计等方式确保账户与访问，安全避免资源使用混淆、资源盗用等风险。</p>' +
                     '<p class="mainPararaph"><b>应用场景：</b>对于所有希望新建大数据分析平台的用户来说，云是原生的适合于大数据分析的。大数据分析的使用场景中，每次运算都需要大量的计算资源，但是在分析完成后资源将处于闲置状态，我们的大数据方案基于AWS，使用托管的EMR服务运算分析，随时可以启动/删除集群，最大程度的节省了使用成本。对于希望上云的客户而言，无论在本地使用的是怎样的架构方案，博思都将帮助客户完成整体的结构改造与迁移，更好的适应云，节省大量的基础环境与软件维护工作，使客户能将更多的精力集中在业务相关的数据分析中。</p>' + 
                     '<p class="mainPararaph"><b>方案优势：</b>基于AWS的大数据方案里，采用托管的EMR与S3存储、RedShift服务等，能够节省大量的基础环境搭建与维护工作，同时无需担心软件与硬件的性能能力，所有的服务都以自动伸缩式集群的方案提供极其巨大的负载能力，以保证能够满足用户所有的性能需求。基于AWS，所有的计算资源与存储资源都可以即开即用，避免了一切不必要的资源闲置与浪费，能够最大程度的节省成本费用，除此之外，博思云自研出一套对EMR+S3的安全与资源管理系统，可以实现统一身份认证，日志审计，资源与权限分配，以及集成CD/CI的能力。</p>' +
