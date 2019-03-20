@@ -98,11 +98,12 @@ $(document).ready(function () {
     function customerBody (customerIndex) {
         switch (customerIndex) {
             case 0:
-                $('.modalBody').html('<p class="mainPararaph"><b>TSL电商管理平台</b></p>' +
+                $('.modalBody').html('<p class="modalTitle"><b>TSL电商管理平台</b></p>' +
+                    '<p class="mainPararaph"><b>公司简介：</b></p>' +
                     '<p class="mainPararaph textIndent2em">谢瑞麟(TSL)珠宝有限公司创立于1971年，1987在香港联交所公开上市，业务遍布港澳，大陆与东南亚。谢瑞麟珠宝：璀璨、纯洁、闪亮、完美，是性价比卓越的婚戒。随着互联网营销的蓬勃发展，谢瑞麟珠宝也大力进军发展网上销售渠道，包括网上旗舰店，无人机体验社区，应用分享，在线应用等.形成线上, 线下实体店，渠道多层次的销售模式。</p>' +
                     '<p class="mainPararaph textIndent2em">现有的IT系统无法满足多样型的销售发展需求，新应用程序（营销，价格更新，供应商渠道，产品）发布速度增加，但开发团队代码更新、开发、测试、生产部署执行发行周期长、容易出错。维护团队持续增加服务器数量，应用与服务器的对应关系复杂，难以定位是应用本身问题，还是基础架构的问题。</p>' +
                     '<p class="mainPararaph"><b>问题分析与需求定义：</b></p>' + 
-                    '<p class="mainPararaph textIndent2em"> AWS与博思云为公司的销售与技术联合团队深入到谢瑞麟的IT部门进行调研，调研总结是，IT部门还处于传统的“IT管理”模式更关注具体服务器管理、网络管理和系统软件安装部署等工作。开发人员负责生产就绪代码管理和新功能的实现环节多，而且不是自动化方式,需要新的更高效的方法需要协作与整合，提升维护效率。</p>' +
+                    '<p class="mainPararaph textIndent2em">AWS与博思云为公司的销售与技术联合团队深入到谢瑞麟的IT部门进行调研，调研总结是，IT部门还处于传统的“IT管理”模式更关注具体服务器管理、网络管理和系统软件安装部署等工作。开发人员负责生产就绪代码管理和新功能的实现环节多，而且不是自动化方式,需要新的更高效的方法需要协作与整合，提升维护效率。</p>' +
                     '<p class="mainPararaph textIndent2em">需要文化观念的改变，不断适应快速变化的市场，更多地关注业务的改进与提升。需要转向更多地关注业务的改进与提升模式，关注流程的规范化、标准化，明确定义各个流程的目标和范围、有关人员的责权利，以及各个流程之间的关系等，比如应用定义，配置管理流程等，实现应用程序的自动化构建、部署、测试和发布。</p>' +
                     '<p class="mainPararaph"><b>方案建议：</b></p>' + 
                     '<p class="mainPararaph textIndent2em">DevOps是利用云解决方案的优势，将敏捷实践与过程组合起来。实现应用程序的持续集成、开发、构建、部署、测试和发行目标。采用DevOps模式促进协作，通过自动化为协作提供方便, 将敏捷活动的持续开发目标扩展到持续集成和发行。</p>' + 
@@ -116,15 +117,19 @@ $(document).ready(function () {
                 )
                 break;
             case 1:
-                $('.modalBody').html('<p class="modalTitle"><b>日志管理与集成解决方案</b></p>' +
-                    '<p class="mainPararaph"><b>EKK日志管理解决方案：</b><img src="assets/img/portfolio/Solution-EkkLog.png" alt=""></p>' +
-                    '<p class="mainPararaph"><b>方案描述：</b>基于流行的ELK（Elasticsearch,Logstash, and Kibana）系统改造成为更加精简的托管式的适应于AWS的EKK解决方案（AmazonElasticsearch Service, Amazon Kinesis, andKibana）。采用Kinesis替代Logstash，使用AWS托管的Elasticsearch服务提供更加稳定高效的运行环境。通过KinesisAgent收集目标机器上的特定信息/日志，传输至Kinesis处理，备份至S3同时汇总数据至Elasticsearch进行自定义的可视化展示。为了更加精准的把握用户使用习惯等数据，采用Lambda实时收集并传输ELB的日志信息至S3与Elasticsearch。</p>' +
-                    '<p class="mainPararaph"><b>应用场景：</b>EKK是一套基于AWS的实时日志分析管理平台，通过Agent可以收集系统日志、应用程序日志、安全日志等，并集中处理后可以特定方式进行可视化展示。通常在机器数过大时，日志分布在上百台机器上，难以收集且难以分析；即便使用手工/半手工方式收集了日志信息，采用Grep/Awk/Wc等方式进行统计检索效率也极其低下。因此在大机器数/大分布式集群等条件下采用博思提供的EKK日志管理方案能够很好的解决日志收集、管理、分析与可视化展示的问题。</p>' +
-                    '<p class="mainPararaph"><b>方案优势：</b>相比传统的手工/脚本日志管理方式，更加高效且稳定，能够极其高效的收集并分析数百台机器的日志信息，并以自定义的方式进行可视化展示；相比，普通的ELK架构，EKK架构则更加适用于AWS平台，采用了多种AWS托管服务，能够有效降低运维压力与成本，同时不用担心服务性能瓶颈。</p>' +
-                    '<p class="mainPararaph"><b>Splunk管理集成解决方案：</b><img src="assets/img/portfolio/Solution-Splunk.png" alt=""></p>' +
-                    '<p class="mainPararaph"><b>方案描述：</b>采用Splunk管理解决方案，在AWS上能够监控管理EC2、RDS、Kinesis、ELB、S3、Config、CloudFront、CloudWatch、FlowLogs、Billing等大多数AWS服务，通过实时收集分析AWS上各类服务的日志，并以图形化方式进行展示，便于把控整体系统的运行情况。除了基础的服务日志管理外，Splunk还能结合BillingReport与Cloudtrail、CloudWatch等服务的日志信息，分析并管理各个服务的资源使用情况，并提出可行的优化建议；Splunk还能通过可视化的方案展现所有的账户及其组别体系，区分各个账户的权限级别，实时监控并管理账户的使用情况，保证账户的安全性。而且在AWS全球区域里，都提供了Cloudformation模板与SplunkAMI，能够一键快速部署Splunk解决方案。</p>' +
-                    '<p class="mainPararaph"><b>应用场景：</b>Splunk是成熟的产品，而且针对AWS进行了定制的优化，能够合理的管控AWS上大部分服务资源，监控资源的使用情况，同时能够针对账户使用情况进行管理优化，能够针对账单与各个服务使用量进行分析并提出优化方案。适用与所有需要重视AWS资源管理、账号安全控制、账单分析与资源优化的场景与客户。</p>' +
-                    '<p class="mainPararaph"><b>方案优势：</b>相比单纯的日志管理与分析平台，Splunk能提供更加完善的解决方案，能在账户与资源使用量、账单报表等多个方面提供更为强大的管理、分析、优化能力。并且基于成熟的商业产品性质，在后续的软件更新与AWS支持上也会有更好的体验。</p>'
+                $('.modalBody').html('<p class="modalTitle"><b>Galanz电商管理平台</b></p>' +
+                    '<p class="mainPararaph"><b>公司简介：</b></p>' +
+                    '<p class="mainPararaph textIndent2em">格兰仕集团是一家综合性白色家电品牌企业，是中国家电业具有强大影响力的龙头企业之一。格兰仕自1978年9月28日创立以来，从轻纺明星企业，到微波炉“黄金品牌”，再到综合性白色家电集团，一直是中国制造在国际市场上的一张名片。怀抱“百年企业 世界品牌”愿景，秉持“努力，让顾客感动”宗旨，格兰仕匠心智造精品电器，造福全球近200个国家和地区人民，创造更简单有趣的G+智慧家居解决方案，满足世界各地人民日益增长的美好生活需要和不断变化的消费升级需求。 </p>' +
+                    '<p class="mainPararaph"><b>需求分析：</b></p>' + 
+                    '<p class="mainPararaph textIndent2em">格兰仕原在本地服务器搭建了电商网站，并拥有大量的订单交易。伴随着业务的增长。通过开发和部署新的增强服务和应用，跟上客户和用户不断变化的需求，确保客户和用户都可以使用这些IT服务和应用，并保证其数据和信息安全成为了格兰仕首要考虑的问题。</p>' +
+                    '<p class="mainPararaph textIndent2em">1. 把传统的手工操作转变为自动化流程，能够持续开发、持续测试、持续集成、持续部署及持续监控，提高产品开发、运维部署的效率，减少人为因素引起的失误和事故，提早发现问题并及时地解决问题。</p>' +
+                    '<p class="mainPararaph textIndent2em">2. 减少本地服务器压力、节约成本、能够提高产品或服务的交付速度，帮助企业具备足够的敏捷性、精益性及安全性，快速应对客户需求、市场条件、竞争压力或法规要求等方面的变化。</p>' +
+                    '<p class="mainPararaph textIndent2em">通过AWS部署DevOps电商平台， 利用相关服务提供平台的安全、快速、自动化流程、日志监控等服务来管理该平台， 且按需使用资源，高度可扩展、灵活易管理的业务模式，具有大规模、虚拟化、高可靠及弹性配置等属性。</p>' +
+                    '<p class="mainPararaph"><b>解决方案：</b></p>' + 
+                    '<p class="mainPararaph textIndent2em"><img class="solution_ai_img" src="assets/img/portfolio/customer_case/DevOps-Galanz.png" alt=""></p>' + 
+                    '<p class="mainPararaph textIndent2em">对此，格兰仕在多方考察后，决定使用AWS来帮助他们管理电商网站，同时本地服务器作为ECS代码仓库。在本方案，采用了多AZ部署以确保高可用性，使用AWS WAF 作为Web 应用程序防火墙及Lambda限制入站访问规则，使用了AutoScaling与ALB去确保中间件等无状态服务器的处理能力，并使用AWS的RDS for MySQL作为数据存储，以CodePipeline、CodeBuild、CodeDeploy、CodeCommit、CodeStar实现DevOps。结合CloudWatch、X-Ray提供完整的监控报警能力，形成了可配置、可重建、可追溯、自动化、可视化、服务化的优秀DevOps工具链。</p>' + 
+                    '<p class="mainPararaph"><b>方案收益：</b></p>' + 
+                    '<p class="mainPararaph textIndent2em">该方案实施五六个月后，客户的研发管理由传统的手工作坊式进入到高效、敏捷、协同的状态，所有的动作全部通过一体化的平台进行组织，可靠性、计算成本、存储资源成本、运维成本等各方面都得到了巨大的优化提升。</p>'
                 )
                 break;
             default:
