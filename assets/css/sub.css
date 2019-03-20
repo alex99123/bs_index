@@ -151,6 +151,14 @@
     margin: 0 auto;
 }
 
+.mainPararaph .solution_ai_img {
+    height: 420px;
+}
+
+.textIndent2em {
+    text-indent: 2em;
+}
+
 .subContent {
     padding: 0 40px;
 }
