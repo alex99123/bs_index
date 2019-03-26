@@ -111,9 +111,9 @@ $(document).ready(function () {
                     '<p class="mainPararaph textIndent2em">DevOps核心思想就是：“快速交付价值，灵活响应变化”。其基本原则如下：高效的协作和沟通；自动化流程和工具；快速敏捷的开发；持续交付和部署；不断学习和创新。通过技术工具，把传统的手工操作转变为自动化流程，这不仅有利于提高产品开发、运维部署的效率，还将减少人为因素引起的失误和事故，提早发现问题并及时地解决问题，这样也保证了产品的质量。</p>' + 
                     '<p class="mainPararaph textIndent2em">下图展示了基于AWS平台DevOps自动化的流程：</p>' + 
                     '<p class="mainPararaph textIndent2em"><img class="solution_ai_img" src="assets/img/portfolio/customer_case/DevOps-AWS.png" alt=""></p>' + 
-                    '<p class="mainPararaph textIndent2em">CloudFormation, CodeCommit, CodeBuild, CodeDaploy持续交付部署：实现应用程序的自动化构建、部署、测试和发布。AWS Lambda 可以自动运行代码，而无需配置或管理服务器。只需编写代码并将其上传至 Lambda.  AWS Lambda 可以响应触发器来启动应用程序。</p>' + 
+                    '<p class="mainPararaph textIndent2em">CloudFormation, CodeCommit, CodeBuild, CodeDaploy持续交付部署：实现应用程序的自动化构建、部署、测试和发布。AWS Lambda 可以自动运行代码，而无需配置或管理服务器。只需编写代码并将其上传至CodeCommit，通过Commit自动触发lambda响应来启动应用程序。</p>' + 
                     '<p class="mainPararaph"><b>方案效果：</b></p>' + 
-                    '<p class="mainPararaph textIndent2em">更多地关注业务的改进与提升更快速地交付，响应市场的变化，新APP上线时间从平均4周缩短到2周，维护人员人均维护效率提升70%。</p>'
+                    '<p class="mainPararaph textIndent2em">该项目起适于2018.06.01日～2018.09.30日，更多地关注业务的改进与提升更快速地交付，响应市场的变化，新APP上线时间从平均4周缩短到2周，维护人员人均维护效率提升70%。</p>'
                 )
                 break;
             case 1:
@@ -129,7 +129,7 @@ $(document).ready(function () {
                     '<p class="mainPararaph textIndent2em"><img class="solution_ai_img" src="assets/img/portfolio/customer_case/DevOps-Galanz.png" alt=""></p>' + 
                     '<p class="mainPararaph textIndent2em">对此，格兰仕在多方考察后，决定使用AWS来帮助他们管理电商网站，同时本地服务器作为ECS代码仓库。在本方案，采用了多AZ部署以确保高可用性，使用AWS WAF 作为Web 应用程序防火墙及Lambda限制入站访问规则，使用了AutoScaling与ALB去确保中间件等无状态服务器的处理能力，并使用AWS的RDS for MySQL作为数据存储，以CodePipeline、CodeBuild、CodeDeploy、CodeCommit、CodeStar实现DevOps。结合CloudWatch、X-Ray提供完整的监控报警能力，形成了可配置、可重建、可追溯、自动化、可视化、服务化的优秀DevOps工具链。</p>' + 
                     '<p class="mainPararaph"><b>方案收益：</b></p>' + 
-                    '<p class="mainPararaph textIndent2em">该方案实施五六个月后，客户的研发管理由传统的手工作坊式进入到高效、敏捷、协同的状态，所有的动作全部通过一体化的平台进行组织，可靠性、计算成本、存储资源成本、运维成本等各方面都得到了巨大的优化提升。</p>'
+                    '<p class="mainPararaph textIndent2em">该方案开始于2018年10月，结束于2019年2月初，实施以来，客户的研发管理由传统的手工作坊式进入到高效、敏捷、协同的状态，所有的动作全部通过一体化的平台进行组织，可靠性、计算成本、存储资源成本、运维成本等各方面都得到了巨大的优化提升。</p>'
                 )
                 break;
             default:
