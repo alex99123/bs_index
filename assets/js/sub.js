@@ -9,12 +9,9 @@ $(document).ready(function () {
         }
     }
 
-
     $(document).on('click', '.modalHead span:nth-child(2)', function(event) {
         $('.modalWrap').remove();
     })
-
-    
 
     var solutionImg = new CreateModal('solution_case', '.solution_img');
     var solutionTitle = new CreateModal('solution_case', '.solution_title');

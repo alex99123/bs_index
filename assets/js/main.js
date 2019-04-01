@@ -278,11 +278,21 @@
 		var scrollTop = $(window).scrollTop();
 
 		if (scrollTop >= half) {
-			$('header').addClass('is-scroll');
+			$('.header.header--fixed').addClass('is-scroll');
 		} else {
-			$('header').removeClass('is-scroll');
+			$('.header.header--fixed').removeClass('is-scroll');
 		}
 
+		$('.container.breadcrumb').css('height', (69 - scrollTop) < 0 ? 0 : (69 - scrollTop));
+
+		$('.hide-to-left').css({ 
+			right:  (scrollTop < 200) ? scrollTop : 200, 
+			opacity: (scrollTop / 200 > 0) ? (1 - scrollTop / 200) : 1
+		})
+		$('.hide-to-right').css({ 
+			left:  (scrollTop < 200) ? scrollTop : 200, 
+			opacity: (scrollTop / 200 > 0) ? (1 - scrollTop / 200) : 1
+		})
 	});
 
 	$('.onepage-nav').dropdownMenu({
