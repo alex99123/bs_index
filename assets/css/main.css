@@ -1529,7 +1529,7 @@ ul {
     height: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
 }
 
@@ -1849,6 +1849,16 @@ ul {
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .15);
 }
 
+.header.header--visibility {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .15);
+}
+
 .header__inner {
     position: relative;
     padding-right: 45px;
@@ -1914,7 +1924,7 @@ ul {
     }
 
     .onepage-nav .onepage-menu .sub-menu li {
-        background-color: #111;
+        background-color: white;
     }
 
     .onepage-nav .onepage-menu .sub-menu li:first-child {
@@ -1922,7 +1932,7 @@ ul {
     }
 
     .onepage-nav .onepage-menu .sub-menu li:last-child {
-        padding-bottom: 18px;
+        padding-bottom: 7px;
     }
 
     .onepage-nav .onepage-menu .sub-menu a {
@@ -1957,13 +1967,9 @@ ul {
         color: #19c2c9;
     }
 
-    .onepage-nav .onepage-menu .current-menu-parent > a,
-    .onepage-nav .onepage-menu .current-menu-item > a {
-        color: #19c2c9;
-    }
-
     .onepage-nav .onepage-menu .sub-menu {
-        width: 200px;
+        white-space: nowrap;
+        height: 50px;
         position: absolute;
         top: 100%;
         z-index: -1;
@@ -1979,10 +1985,11 @@ ul {
     .onepage-nav .onepage-menu .sub-menu li > a {
         font-size: 14px;
         transition: all 300ms ease;
+        color: #748182;
     }
 
     .onepage-nav .onepage-menu .sub-menu li:hover > a {
-        color: #4aa8ff;
+        color: #19c2c9;
     }
 
     .onepage-nav .onepage-toggle-menu {
@@ -2118,11 +2125,9 @@ ul {
     .onepage-menu li a:after {
         content: '';
         position: absolute;
-        bottom: 5px;
         left: 20px;
         width: 0;
         height: 2px;
-        background-color: #19c2c9;
         transition: all .3s ease;
     }
 
@@ -2258,6 +2263,7 @@ ul {
 }
 
 .hero__text {
+    width: auto;
     font-size: 20px;
     color: #fff;
 }
