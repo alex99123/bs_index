@@ -37,14 +37,14 @@
 								
 								<!-- onepage-menu -->
 								<ul class="onepage-menu">
-									<li class="current-menu-item"><a href="#id-1">首页</a>
+									<li class="current-menu-item"><a onclick="clickScrollView('#id-1')">首页</a>
 									</li>
-									<li><a href="#id-2">关于我们</a>
+									<li><a onclick="clickScrollView('#id-2')">关于我们</a>
 									</li>
-									<li><a href="#id-3">能力认证</a>
+									<li><a onclick="clickScrollView('#id-3')">能力认证</a>
 									</li>
 
-									<li><a href="#id-4">解决方案</a>
+									<li><a  onclick="clickScrollView('#id-4')">解决方案</a>
 
 										<ul class="sub-menu">
 											<li><a href="./devOps.html">DevOps解决方案</a>
@@ -54,7 +54,7 @@
 									</li>
 
 
-									<li><a href="#id-5">客户案例</a>
+									<li><a onclick="clickScrollView('#id-5')">客户案例</a>
 
 										<ul class="sub-menu">
 											<li><a href="#">谢瑞麟电商平台</a>
@@ -66,9 +66,9 @@
 										</ul>
 
 									</li>
-									<li><a href="#id-6">新闻资讯</a>
+									<li><a onclick="clickScrollView('#id-6')">新闻资讯</a>
 									</li>
-									<li><a href="#id-7">联系我们</a>
+									<li><a onclick="clickScrollView('#id-7')">联系我们</a>
 									</li>
 								</ul><!-- onepage-menu -->
 								
@@ -139,15 +139,15 @@
 								</div><!-- End / slide-image -->
 								
 							</div>
-							<div class="col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
+							<div class="col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 textHover">
 								
 								<!-- title -->
 								<div class="title">
 									<h2 class="title__title">公司概述：</h2>
 								</div><!-- End / title -->
 								
-								<p class="fz-16" style="text-indent:2em;">博思云为科技有限公司是一家云服务型企业，总部位于深圳，并在苏州、广州、杭州及北京等地设有分公司。专为客户提供上云的咨询、设计、迁移、运维以及运营的云服务：其中包括上云的咨询设计、数据迁移、运维托管、大数据与AI平台、混合云管理、安全以及集成服务等。</p>
-								<p class="fz-16" style="text-indent:2em;">现有的专家团队中包括：大数据、AI（人工智能）、运维研发、数据库、日志分析，业务架构设计等厂商认证级核心专家成员。且团队中多数取得AWS的高级认证，以及传统IT厂商的认证（VCP/OCP/RHCE），大部分人员都是在IT行业服务十年以上的专家。主要合作对象包括：AWS、Splunk、dynatrace、红帽、Vmware等。重点提供AWS云的集成服务，博思借助总公司（汇通合力）数十年的IT集成经验，可以为很多企业提供与AWS集成的解决方案，例如：AI平台解决方案、大数据解决方案、Splunk日志分析解决方案、Vmware与AWS的混合云解决方案、数据迁移服务解决方案等。</p>
+								<p class="fz-16 " style="text-indent:2em;">博思云为科技有限公司是一家云服务型企业，总部位于深圳，并在苏州、广州、杭州及北京等地设有分公司。专为客户提供上云的咨询、设计、迁移、运维以及运营的云服务：其中包括上云的咨询设计、数据迁移、运维托管、大数据与AI平台、混合云管理、安全以及集成服务等。</p>
+								<p class="fz-16 " style="text-indent:2em;">现有的专家团队中包括：大数据、AI（人工智能）、运维研发、数据库、日志分析，业务架构设计等厂商认证级核心专家成员。且团队中多数取得AWS的高级认证，以及传统IT厂商的认证（VCP/OCP/RHCE），大部分人员都是在IT行业服务十年以上的专家。主要合作对象包括：AWS、Splunk、dynatrace、红帽、Vmware等。重点提供AWS云的集成服务，博思借助总公司（汇通合力）数十年的IT集成经验，可以为很多企业提供与AWS集成的解决方案，例如：AI平台解决方案、大数据解决方案、Splunk日志分析解决方案、Vmware与AWS的混合云解决方案、数据迁移服务解决方案等。</p>
 								
 								
 							</div>
@@ -339,7 +339,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media solution_img"><a href=""><img src="assets/img/blog/Operation.png" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title solution_title"><a href="#">运维托管解决方案</a></h2>
@@ -352,7 +352,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media solution_img"><a href="#"><img src="assets/img/blog/Log.jpg" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title solution_title"><a href="#">日志管理与集成解决方案</a></h2>
@@ -365,7 +365,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media solution_img"><a href="#"><img src="assets/img/blog/BigData.jpg" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title solution_title"><a href="#">大数据与AI解决方案</a></h2>
@@ -396,7 +396,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media customer_img"><a href="#"><img src="assets/img/blog/tsl.jpg" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title customer_title"><a href="#">TSL电商平台</a></h2>
@@ -409,7 +409,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media customer_img"><a href="#"><img src="assets/img/blog/oppo.jpeg" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title customer_title"><a href="#">格兰仕电商平台</a></h2>
@@ -422,7 +422,7 @@
 							<div class="col-lg-4 ">
 								
 								<!--  -->
-								<div>
+								<div class='index__item'>
 									<div class="post__media customer_img"><a href="#"><img src="assets/img/blog/zx.jpg" alt=""/></a></div>
 									<div class="post__body">
 										<h2 class="post__title"><a href="#">中兴RCS咨询与迁移</a></h2>
@@ -481,7 +481,7 @@
 				<!-- End / Section -->
 
 				<!-- Section -->
-				<section class="md-section" id="id-7">
+				<section class="md-section" id="id-7" id='contact'>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-4 ">
@@ -622,5 +622,6 @@
 		<!-- App-->
 		<script type="text/javascript" src="assets/js/main.js"></script>
 		<script type="text/javascript" src="assets/js/sub.js"></script>
+		<script src="assets/js/index.js"></script>
 	</body>
 </html>
