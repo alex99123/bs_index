@@ -2632,9 +2632,54 @@ ul {
     padding: 10px;
     transition: all 1s;
   }
-  .index__item:hover{
+  .index__item:hover,  .link-page-item:hover{
     box-shadow:0 16px 22px 0 rgba(90, 91, 95, .3);
     transform: translateY(10px);
     background: #fff;
    
   }
+  #link-to-top{
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 35vh;
+    background: #b4b4b4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .link-page-item{
+    display: flex;
+    background: #fff;
+    transition: all 1s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .link-page-item > .item-page > .post__text{
+    color:#748182
+  }
+  .item-img{
+      margin-right: 10px;
+      width: 20%;
+      height: 100%;
+  }
+  .item-page{
+    width: 80%;
+    height: 100%;
+}
+.contxt{
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+/**
+button
+-------------------------------------------------------------------------------------------------------*/

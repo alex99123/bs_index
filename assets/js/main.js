@@ -266,6 +266,16 @@
 			scrollTop: 0
 		}, 700);
 	});
+
+	/**
+	 * Footer
+	 */
+	$('#link-to-top').on('click', function (e) {
+		e.preventDefault();
+		$('html,body').animate({
+			scrollTop: 0
+		}, 700);
+	});
 	//*
 	// Header
 	//*
@@ -279,8 +289,10 @@
 
 		if (scrollTop >= half) {
 			$('.header.header--fixed').addClass('is-scroll');
+			$('#link-to-top').show(200)
 		} else {
 			$('.header.header--fixed').removeClass('is-scroll');
+			$('#link-to-top').hide(200)
 		}
 
 		$('.container.breadcrumb').css('height', (69 - scrollTop) < 0 ? 0 : (69 - scrollTop));
@@ -337,5 +349,6 @@
 			scrollTop: offsets
 		}, 700);
 	})
+	
 
 })(jQuery);
