@@ -279,7 +279,6 @@
 	//*
 	// Header
 	//*
-
 	var wh = $(window).height(),
 		half = wh / 2,
 		headerHeight = $('header').outerHeight();
@@ -289,11 +288,22 @@
 
 		if (scrollTop >= half) {
 			$('.header.header--fixed').addClass('is-scroll');
-			$('#link-to-top').show(200)
+			$('#link-to-top').show(200);
 		} else {
 			$('.header.header--fixed').removeClass('is-scroll');
-			$('#link-to-top').hide(200)
-		}
+			$('#link-to-top').hide(200);
+		};
+
+
+		// console.log(ch);
+		// console.log($('body').height());
+		// console.log(bh);
+		// console.log("222222222222");
+		// console.log(wh);
+		// console.log("111111111111");
+		// console.log(bh-wh);
+
+
 
 		$('.container.breadcrumb').css('height', (69 - scrollTop) < 0 ? 0 : (69 - scrollTop));
 

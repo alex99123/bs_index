@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>BosiCloud - DevOps</title>
+		<title>BosiCloud - Migration</title>
 		<link rel="shortcut icon" href="./favicon.ico">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -90,8 +90,8 @@
 			<div class="pages-banner">
 				<div class="pages-banner-content">
 					<div class="container">
-						<h1 class="banner-title hide-to-left">格兰仕电商平台</h1>
-						<p class="banner-content hide-to-right lead">相关领域：CICD、容器化服务</p>
+						<h1 class="banner-title hide-to-left">星创 (SinoZo) 迁移平台</h1>
+						<p class="banner-content hide-to-right lead">相关领域：访问加速、实时日志分析</p>
 					</div>
 				</div>
 			</div>
@@ -115,53 +115,50 @@
 				<section class="md-section bg-gray" id="id-2">
 					<div class="container solution contxt">
 						<section>
-							<p class="solution-title">&nbsp;&nbsp;格兰仕电商平台</p>
+							<div style="text-align: center;">
+								<img src="../assets/img/migration/xc.png" style="width: 500px;">
+							</div>
+							<!-- <p class="solution-title">星创 (SinoZo) 迁移平台</p> -->
 
 							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;公司简介：</p>	
-								<p class="solution-paragraph">格兰仕集团是一家综合性白色家电品牌企业，是中国家电业具有强大影响力的龙头企业之一。格兰仕自1978年9月28日创立以来，从轻纺明星企业，到微波炉“黄金品牌”，再到综合性白色家电集团，一直是中国制造在国际市场上的一张名片。怀抱“百年企业 世界品牌”愿景，秉持“努力，让顾客感动”宗旨，格兰仕匠心智造精品电器，造福全球近200个国家和地区人民，创造更简单有趣的G+智慧家居解决方案，满足世界各地人民日益增长的美好生活需要和不断变化的消费升级需求。</p>		
+								<p class="solution-sub-title">客户简介：</p>	
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">深圳星创成立于2013年底，是一家国内初创的海外手机应用内容提供商。公司可提供覆盖从功能机到智能机等不同机型的丰富手机应用及游戏产品。</p>
+								<p style="text-indent: 2em; margin-bottom: 0px; color: #748182; ">公司主要成员均具备多年手机行业的从业经验，有资深的行业技术背景和市场开拓经验。公司陆续与法国、新加坡、韩国、西班牙、葡萄牙、俄罗斯、巴西、埃及、越南等近40个国家的通道和内容提供商建立了长期稳固的合作关系，在给海外用户提供符合当地习俗和风情的丰富内容的同时，也可以给合作伙伴获得长期稳定的业务收入。</p>
+								<p style="text-indent: 2em; color: #748182; ">经过将近5年的发展，公司已与多家手机公司开展了长期深入的业务合作，所提供的产品正在为海外近40个国家的用户提供内容服务。</p>		
 <!-- 
 								<div class="solution-img">
 									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
 								</div> -->
 							</div>
 							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;需求分析：</p>	
-								<p class="solution-paragraph">格兰仕原在本地服务器搭建了电商网站，并拥有大量的订单交易。伴随着业务的增长。通过开发和部署新的增强服务和应用，跟上客户和用户不断变化的需求，确保客户和用户都可以使用这些IT服务和应用，并保证其数据和信息安全成为了格兰仕首要考虑的问题。</p>		
+								<p class="solution-sub-title">面临的问题：</p>	
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">1. 随着体量增长、运维压力增长迅速。产生了『自动化部署应用程序和所有支持的软件和依赖』、『快速创建和复制资源模板』、『在弹性环境下部署实时监控』等等问题。现有运维团队面临严峻挑战。</p>	
+								<p style="text-indent: 2em; margin-bottom: 0px; color: #748182; ">2. 为了提升应用性能、客户希望在业务逻辑中引入Redis提高数据查询效率、但缺乏足够的开发人员推动进程。相似的、星创同时希望使用ELK架构对业务数据进行分析、从而驱动商业决策和业务深化。</p>
+								<p style="text-indent: 2em; color: #748182; ">3. 需要高质量CDN服务优化东南亚、北非等区域的访问体验。</p>
 <!-- 
 								<div class="solution-img">
 									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
 								</div> -->
 							</div>
 							<div>
-								<p class="solution-sub-title">1.3&nbsp;&nbsp;方案优势:</p>	
-								<p class="solution-paragraph">基于AWS的大数据方案里，采用托管的EMR与S3存储、RedShift服务等，能够节省大量的基础环境搭建与维护工作，同时无需担心软件与硬件的性能能力，所有的服务都以自动伸缩式集群的方案提供极其巨大的负载能力，以保证能够满足用户所有的性能需求。基于AWS，所有的计算资源与存储资源都可以即开即用，避免了一切不必要的资源闲置与浪费，能够最大程度的节省成本费用，除此之外，博思云自研出一套对EMR+S3的安全与资源管理系统，可以实现统一身份认证，日志审计，资源与权限分配，以及集成CD/CI的能力。</p>
-								<ol>
-									<li> 把传统的手工操作转变为自动化流程，能够持续开发、持续测试、持续集成、持续部署及持续监控，提高产品开发、运维部署的效率，减少人为因素引起的失误和事故，提早发现问题并及时地解决问题。</li>
-									<li>减少本地服务器压力、节约成本、能够提高产品或服务的交付速度，帮助企业具备足够的敏捷性、精益性及安全性，快速应对客户需求、市场条件、竞争压力或法规要求等方面的变化。</li>
-								</ol>
-								<p class="solution-paragraph">通过AWS部署DevOps电商平台， 利用相关服务提供平台的安全、快速、自动化流程、日志监控等服务来管理该平台， 且按需使用资源，高度可扩展、灵活易管理的业务模式，具有大规模、虚拟化、高可靠及弹性配置等属性。</p>		
-<!-- 		
-								<div class="solution-img">
-									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
-								</div> -->
-							</div>
-						</section>
+								<p class="solution-sub-title">Bosicloud解决方案</p>	
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">在和星创进行详细的需求分析和评估之后、博思云为和星创都认为迁移至AWS后、AWS针对计算资源和数据分析提供的多种服务能够完整解决星创现有问题。同时令星创拥有灵活的弹性架构和未来架构拓展的无限可能。</p>
+								<ul style=" color: #748182; ">
+									<li>选择多可用区（AZ）部署保障了星创业务高可用性和高可靠性;</li>
+									<li>AWS Cloudwatch和Cloudtrail服务通过图形化界面UI,让运维人员快速建立全资源的管理控制台;</li>
+									<img src="../assets/img/migration/xc-cw.png" style="padding-bottom: 20px;">
+									<li>EC2 Autoscaling能保障业务的正常运转和资源的高效利用,在访问低谷时缩减资源以节约成本,在高峰期快速水平扩展支撑业务系统;</li>
+									<img src="../assets/img/migration/xc-auto.png" style="padding-bottom: 20px;">
+									<li>针对Redis和Elasticsearch等服务、AWS推出了全托管的Elasticache for Redis和Elasticsearch(集成Kibana)。通过此项服务、星创在进行逻辑和功能测试时、无需花费大量时间调试和管理基础环境。客户可以在几分钟内搭建起具有完整功能的Redis或Elasticsearch集群。</li>
+									<li>最后、博思云为帮助星创利用AWS Cloudfront在全球各个地区部署高性能的内容分发网络、加速内容分发、成功优化了访问体验。</li>
+								</ul>		
 
-						<section>
-							<p class="solution-title">&nbsp;&nbsp;解决方案：</p>
-							<div>
-								<div class="solution-img">
-									<img src="../assets/img/portfolio/customer_case/DevOps-Galanz.png" alt="">
+								<div class="solution-img" style="text-align: center;">
+									<img src="../assets/img/migration/xc-jg.png" style="widows: 800px;">
 								</div>
-								<p class="solution-paragraph">对此，格兰仕在多方考察后，决定使用AWS来帮助他们管理电商网站，同时本地服务器作为ECS代码仓库。在本方案，采用了多AZ部署以确保高可用性，使用AWS WAF 作为Web 应用程序防火墙及Lambda限制入站访问规则，使用了AutoScaling与ALB去确保中间件等无状态服务器的处理能力，并使用AWS的RDS for MySQL作为数据存储，以CodePipeline、CodeBuild、CodeDeploy、CodeCommit、CodeStar实现DevOps。结合CloudWatch、X-Ray提供完整的监控报警能力，形成了可配置、可重建、可追溯、自动化、可视化、服务化的优秀DevOps工具链。</p>
-							</div>
-							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;方案收益:</p>	
-								<p class="solution-paragraph">该方案开始于2018年10月，结束于2019年2月初，实施以来，客户的研发管理由传统的手工作坊式进入到高效、敏捷、协同的状态，所有的动作全部通过一体化的平台进行组织，可靠性、计算成本、存储资源成本、运维成本等各方面都得到了巨大的优化提升。</p>
 							</div>
 						</section>
-			
+
 					</div>
 				</section>
 				<!-- End / Section -->

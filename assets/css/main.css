@@ -1780,6 +1780,7 @@ ul {
     color: #fff;
     text-align: center;
     padding: 40px 0;
+    width: 100%;
 }
 
 .footer #back-to-top {
@@ -2667,16 +2668,20 @@ ul {
   .item-img{
       margin-right: 10px;
       width: 20%;
-      height: 100%;
+      line-height: 12;
+      /*height: 100%;*/
   }
   .item-page{
     width: 80%;
     height: 100%;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 25px;
 }
 .contxt{
-    padding: 10px;
     background: #fff;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    width: 65%;
 }
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>BosiCloud - DevOps</title>
+		<title>BosiCloud - Migration</title>
 		<link rel="shortcut icon" href="./favicon.ico">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -90,8 +90,8 @@
 			<div class="pages-banner">
 				<div class="pages-banner-content">
 					<div class="container">
-						<h1 class="banner-title hide-to-left">格兰仕电商平台</h1>
-						<p class="banner-content hide-to-right lead">相关领域：CICD、容器化服务</p>
+						<h1 class="banner-title hide-to-left">广汽本田DMP平台迁移</h1>
+						<p class="banner-content hide-to-right lead">相关领域：数据分析、存储、实时数据传输</p>
 					</div>
 				</div>
 			</div>
@@ -115,53 +115,53 @@
 				<section class="md-section bg-gray" id="id-2">
 					<div class="container solution contxt">
 						<section>
-							<p class="solution-title">&nbsp;&nbsp;格兰仕电商平台</p>
+							<div style="text-align: center;">
+								<img src="../assets/img/migration/gq.png" style="width: 700px; padding-bottom: 20px; padding-top: 20px;">
+							</div>
+							<!-- <p class="solution-title">星创 (SinoZo) 迁移平台</p> -->
 
 							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;公司简介：</p>	
-								<p class="solution-paragraph">格兰仕集团是一家综合性白色家电品牌企业，是中国家电业具有强大影响力的龙头企业之一。格兰仕自1978年9月28日创立以来，从轻纺明星企业，到微波炉“黄金品牌”，再到综合性白色家电集团，一直是中国制造在国际市场上的一张名片。怀抱“百年企业 世界品牌”愿景，秉持“努力，让顾客感动”宗旨，格兰仕匠心智造精品电器，造福全球近200个国家和地区人民，创造更简单有趣的G+智慧家居解决方案，满足世界各地人民日益增长的美好生活需要和不断变化的消费升级需求。</p>		
+								<p class="solution-sub-title">客户简介：</p>	
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">广州本田汽车有限公司成立于1998年7月1日，是由广州汽车集团股份有限公司、本田技研工业株式会社和本田技研工业(中国)投资有限公司按50：40：10的股比共同投资建设和经营的企业，合资年限为30年。2009年4月，广州本田汽车有限公司更名为广汽本田汽车有限公司（以下简称“GHAC”）。广汽本田洞察汽车市场变化及原有用户的升级需求，引入Honda高端品牌Acura（讴歌），2016年广汽本田迎来了Honda、理念和Acura（讴歌）三品牌运营的新阶段。目前，Honda品牌产品包括：雅阁（ACCORD）、冠道（AVANCIER）、奥德赛（ODYSSEY）、缤智（VEZEL）、凌派（CRIDER）、锋范（CITY）和飞度（FIT）等系列车型；理念（EVERUS）品牌产品包括：理念S1车型；Acura（讴歌）品牌产品包括：CDX、TLX-L、RDX车型以及进口车型。三大产品品牌并驾齐驱，形成强势的品牌矩阵，满足中国消费者日益多样化的产品需求。</p>
+								<p style="text-indent: 2em; color: #748182; ">博思云为帮助GHAC迁移和重构了数据管理中心（DMP）、极大缩减了数据中心运维成本、提高了数据利用效率、重新为广汽本田赋能。</p>
 <!-- 
 								<div class="solution-img">
 									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
 								</div> -->
 							</div>
 							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;需求分析：</p>	
-								<p class="solution-paragraph">格兰仕原在本地服务器搭建了电商网站，并拥有大量的订单交易。伴随着业务的增长。通过开发和部署新的增强服务和应用，跟上客户和用户不断变化的需求，确保客户和用户都可以使用这些IT服务和应用，并保证其数据和信息安全成为了格兰仕首要考虑的问题。</p>		
+								<p class="solution-sub-title">面临的问题：</p>	
+								<img src="../assets/img/migration/gq-jg-2.png" style="padding-bottom: 20px;">
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">1. 数据量波动较大、为满足峰值需要采购大量的服务器。DMP接入了GHAC网站数据、线下门店统计数据、第三方分析数据等多方数据，未来考虑接入智能电动汽车充电桩等数据。数据量在白天较大、在19:00左右达到峰值，然而午夜的数据量极少,大部分云厂商预付费模式会在业务初期消耗极大资金。 </p>	
+								<p style="text-indent: 2em; margin-bottom: 0px; color: #748182; ">2.作为汽车制造企业、GHAC在大数据分析和BI上并不想投入过多的人力资源、但是Hadoop生态的基础架构运维和Debug需要数据团队分配额外的技术工程师负责。</p>
+								<p style="text-indent: 2em; color: #748182; ">3.GHAC拥有超过8000位员工,DMP系统现有的身份和访问管理基于账号和静态密码，无法实现密码轮换和基于角色的访问控制。</p>
 <!-- 
 								<div class="solution-img">
 									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
 								</div> -->
 							</div>
 							<div>
-								<p class="solution-sub-title">1.3&nbsp;&nbsp;方案优势:</p>	
-								<p class="solution-paragraph">基于AWS的大数据方案里，采用托管的EMR与S3存储、RedShift服务等，能够节省大量的基础环境搭建与维护工作，同时无需担心软件与硬件的性能能力，所有的服务都以自动伸缩式集群的方案提供极其巨大的负载能力，以保证能够满足用户所有的性能需求。基于AWS，所有的计算资源与存储资源都可以即开即用，避免了一切不必要的资源闲置与浪费，能够最大程度的节省成本费用，除此之外，博思云自研出一套对EMR+S3的安全与资源管理系统，可以实现统一身份认证，日志审计，资源与权限分配，以及集成CD/CI的能力。</p>
-								<ol>
-									<li> 把传统的手工操作转变为自动化流程，能够持续开发、持续测试、持续集成、持续部署及持续监控，提高产品开发、运维部署的效率，减少人为因素引起的失误和事故，提早发现问题并及时地解决问题。</li>
-									<li>减少本地服务器压力、节约成本、能够提高产品或服务的交付速度，帮助企业具备足够的敏捷性、精益性及安全性，快速应对客户需求、市场条件、竞争压力或法规要求等方面的变化。</li>
-								</ol>
-								<p class="solution-paragraph">通过AWS部署DevOps电商平台， 利用相关服务提供平台的安全、快速、自动化流程、日志监控等服务来管理该平台， 且按需使用资源，高度可扩展、灵活易管理的业务模式，具有大规模、虚拟化、高可靠及弹性配置等属性。</p>		
-<!-- 		
-								<div class="solution-img">
-									<img src="./../assets/img/portfolio/solution_case/DevOps-life-2.png" alt="">
-								</div> -->
+								<p class="solution-sub-title">Bosicloud解决方案</p>	
+								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182; ">博思云为(Bosicloud)首先将EC2 Autoscaling应用至GHAC的数据收集服务器、借助这项AWS提供的水平拓展服务，GHAC即可以实现根据服务器CPU使用率部署合适的计算资源，也可以执行定时计划、在规定的时间段增加/减少服务器数量以满足业务需求。以尽可能低的成本保证稳定、可预测的性能。</p>
+								<ul style=" color: #748182; padding-bottom: 16px;">
+									<li>选择Kafka作为消息队列、解耦合数据收集端和数据消费端。</li>
+									<li>面对实时数据、博思云为迁移了DMP系统原有的Spark-Streaming组件对实时数据进行处理。之后存储到数据湖S3中、超过1年的数据将会被存储在更经济的Glacier中持久化存储。</li>
+									<li>面对批量数据、在使用Hadoop框架时。博思云为选择AWS EMR服务作为批量数据处理中心。Amazon EMR 提供的托管 Hadoop 框架可以让GHAC快速、轻松、经济高效地在多个动态可扩展的 Amazon EC2 实例中处理大量数据。客户还可以运行其他常用的分布式框架（例如 EMR 中的 Apache Spark、HBase、Presto 和 Flink），以及与其他 AWS 数据存储服务（例如 Amazon S3 和 Amazon DynamoDB）中的数据进行交互。</li>
+								</ul>	
 							</div>
+							<div>
+								<p class="solution-sub-title">在迁移后，负载均衡、数据处理、数据库等方面获得了极大的优势：</p>
+								<img src="../assets/img/migration/gq-fw.png" style="padding-bottom: 20px;">
+							</div>
+
+							<div>
+								<p class="solution-sub-title">最终架构图：</p>
+								<img src="../assets/img/migration/gq-jg-1.png" style="widows: 800px;">
+							</div>
+
+
 						</section>
 
-						<section>
-							<p class="solution-title">&nbsp;&nbsp;解决方案：</p>
-							<div>
-								<div class="solution-img">
-									<img src="../assets/img/portfolio/customer_case/DevOps-Galanz.png" alt="">
-								</div>
-								<p class="solution-paragraph">对此，格兰仕在多方考察后，决定使用AWS来帮助他们管理电商网站，同时本地服务器作为ECS代码仓库。在本方案，采用了多AZ部署以确保高可用性，使用AWS WAF 作为Web 应用程序防火墙及Lambda限制入站访问规则，使用了AutoScaling与ALB去确保中间件等无状态服务器的处理能力，并使用AWS的RDS for MySQL作为数据存储，以CodePipeline、CodeBuild、CodeDeploy、CodeCommit、CodeStar实现DevOps。结合CloudWatch、X-Ray提供完整的监控报警能力，形成了可配置、可重建、可追溯、自动化、可视化、服务化的优秀DevOps工具链。</p>
-							</div>
-							<div>
-								<p class="solution-sub-title">&nbsp;&nbsp;方案收益:</p>	
-								<p class="solution-paragraph">该方案开始于2018年10月，结束于2019年2月初，实施以来，客户的研发管理由传统的手工作坊式进入到高效、敏捷、协同的状态，所有的动作全部通过一体化的平台进行组织，可靠性、计算成本、存储资源成本、运维成本等各方面都得到了巨大的优化提升。</p>
-							</div>
-						</section>
-			
 					</div>
 				</section>
 				<!-- End / Section -->
