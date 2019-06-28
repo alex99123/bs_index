@@ -42,6 +42,22 @@ def newList():
 def tsl():
     return render_template('tsl.html')
 
+@application.route('/Migration.html')
+def Migration():
+    return render_template('Migration.html')
+
+@application.route('/MigrationList.html')
+def MigrationList():
+    return render_template('MigrationList.html')
+
+@application.route('/gb.html')
+def gb():
+    return render_template('gb.html')
+
+@application.route('/xc.html')
+def xc():
+    return render_template('xc.html')
+
 
 if __name__ == "__main__":
     application.debug = True
