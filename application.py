@@ -18,6 +18,18 @@ def devOps():
 def bigDataAndAI():
     return render_template('bigDataAndAI.html')
 
+@application.route('/BigDataList.html')
+def BigDataList():
+    return render_template('BigDataList.html')
+
+@application.route('/jm.html')
+def jm():
+    return render_template('jm.html')
+
+@application.route('/bmkp.html')
+def bmkp():
+    return render_template('bmkp.html')
+
 @application.route('/demoList.html')
 def demoList():
     return render_template('demoList.html')
