@@ -10,10 +10,6 @@ def index():
 def index1():
     return render_template('index.html')
 
-@application.route('/devOps.html')
-def devOps():
-    return render_template('devOps.html')
-
 @application.route('/bigDataAndAI.html')
 def bigDataAndAI():
     return render_template('bigDataAndAI.html')
