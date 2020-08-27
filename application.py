@@ -70,6 +70,23 @@ def gb():
 def xc():
     return render_template('xc.html')
 
+@application.route('/msp.html')
+def msp():
+    return render_template('msp.html')
+
+@application.route('/qx.html')
+def qx():
+    return render_template('qx.html')
+
+@application.route('/hf.html')
+def hf():
+    return render_template('hf.html')
+
+@application.route('/MspList.html')
+def hf():
+    return render_template('MspList.html')
+
+
 
 if __name__ == "__main__":
     application.debug = True
