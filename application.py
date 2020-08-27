@@ -83,7 +83,7 @@ def hf():
     return render_template('hf.html')
 
 @application.route('/MspList.html')
-def hf():
+def MspList():
     return render_template('MspList.html')
 
 
