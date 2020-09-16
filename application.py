@@ -87,6 +87,10 @@ def MspList():
     return render_template('MspList.html')
 
 
+@application.route('/product.html')
+def product():
+    return render_template('product.html')
+
 
 if __name__ == "__main__":
     application.debug = True
