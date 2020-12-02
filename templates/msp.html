@@ -1,179 +1,230 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>BosiCloud - MSP</title>
-		<link rel="shortcut icon" href="./favicon.ico">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- Fonts-->
-		<link rel="stylesheet" type="text/css" href="../../assets/fonts/fontawesome/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../assets/fonts/pe-icon/pe-icon.css">
-		<!-- Vendors-->
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/grid.css">
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/magnific-popup/magnific-popup.min.css">
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/swiper/swiper.css">
-		<!-- App & fonts-->
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-		<link rel="stylesheet" type="text/css" href="../assets/css/main.css"><!--[if lt IE 9]>
+
+<head>
+	<title>BosiCloud - MSP</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Fonts-->
+	<link rel="stylesheet" type="text/css" href="../../assets/fonts/fontawesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/fonts/pe-icon/pe-icon.css">
+	<!-- Vendors-->
+	<link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/grid.css">
+	<link rel="stylesheet" type="text/css" href="../assets/vendors/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/vendors/swiper/swiper.css">
+	<!-- App & fonts-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" type='text/css' href="../assets/css/sub.css">
-	</head>
-	
-	<body>
-		<div class="page-wrap">
-			<!-- header -->
-			<header class="header header--visibility">
+	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
+	<style>
+		.table_header {
+			table-layout: fixed;
+			border-collapse: separate;
+			box-sizing: border-box;
+			width: 100%;
+		}
+
+		.table_header thead {
+			color: #909399;
+			font-weight: 500;
+		}
+
+		/* .table_header tr {
+			border-right: 1px solid #EBEEF5;
+			border-bottom: 1px solid #ebeef5;
+		} */
+
+		.table_header th {
+			background-color: #355E9E !important;
+			color: #fff;
+			text-align: center !important;
+			border: 1px solid #dcdcdc !important;
+			vertical-align: middle;
+			font-weight: bold;
+		}
+
+		.table_header td {
+			border-right: 1px solid #EBEEF5;
+			border-bottom: 1px solid #ebeef5;
+			color: #666666;
+			font-size: 14px;
+			padding: 8.4px 14px;
+			text-align: center;
+		}
+		.fontSize{
+			font-size: 20px !important;
+			padding: 5px 14px !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page-wrap">
+		<!-- header -->
+		<header class="header header--visibility">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="../assets/img/logo.png" alt="" /></a></div>
+					<div class="header__menu">
+
+						<!-- onepage-nav -->
+						<nav class="onepage-nav">
+
+							<!-- onepage-menu -->
+							<ul class="onepage-menu">
+								<li class="current-menu-item"><a href="./index.html">首页</a>
+								</li>
+								<li><a href="./index.html">关于我们</a>
+									<ul class="sub-menu">
+										<li><a href="./product.html">产品设备</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="./index.html#id-3">能力认证</a>
+								</li>
+
+								<li><a onclick="clickScrollView('#id-4')">解决方案</a>
+									<ul class="sub-menu">
+										<li><a href="./devOps.html">DevOps</a>
+										</li>
+										<li><a href="./bigDataAndAI.html">BigData</a>
+										</li>
+										<li><a href="./Migration.html">Migration</a>
+										</li>
+										<li><a href="./msp.html">MSP</a>
+										</li>
+										<li><a href="./logAndScheme.html">日志管理与集成</a>
+										</li>
+									</ul>
+								</li>
+
+
+								<li><a onclick="clickScrollView('#id-5')">客户案例</a>
+									<ul class="sub-menu">
+										<li><a href="./DevOpsList.html">DevOps</a>
+										</li>
+										<li><a href="./BigDataList.html">BigData</a>
+										</li>
+										<li><a href="./MigrationList.html">Migration</a>
+										</li>
+										<li><a href="./MspList.html">云托管</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="./index.html#id-6">新闻资讯</a>
+								</li>
+								<li><a href="./index.html#id-7">联系我们</a>
+								</li>
+							</ul><!-- onepage-menu -->
+
+							<div class="navbar-toggle"><span></span><span></span><span></span></div>
+						</nav><!-- End / onepage-nav -->
+
+					</div>
+				</div>
+			</div>
+		</header><!-- End / header -->
+
+		<!-- banner -->
+		<div class="pages-banner">
+			<div class="pages-banner-content">
 				<div class="container">
-					<div class="header__inner">
-						<div class="header__logo"><a href="index.html"><img src="../assets/img/logo.png" alt="" /></a></div>
-						<div class="header__menu">
-	
-							<!-- onepage-nav -->
-							<nav class="onepage-nav">
-	
-								<!-- onepage-menu -->
-								<ul class="onepage-menu">
-									<li class="current-menu-item"><a href="./index.html">首页</a>
-									</li>
-									<li><a href="./index.html">关于我们</a>
-										<ul class="sub-menu">
-											<li><a href="./product.html">产品设备</a>
-											</li>
-										</ul>
-									</li>
-									</li>
-									<li><a href="./index.html#id-3">能力认证</a>
-									</li>
-	
-									<li><a onclick="clickScrollView('#id-4')">解决方案</a>
-										<ul class="sub-menu">
-											<li><a href="./devOps.html">DevOps</a>
-											</li>
-											<li><a href="./bigDataAndAI.html">BigData</a>
-											</li>
-											<li><a href="./Migration.html">Migration</a>
-											</li>
-											<li><a href="./msp.html">MSP</a>
-											</li>
-											<li><a href="./logAndScheme.html">日志管理与集成</a>
-											</li>
-										</ul>
-									</li>
-	
-	
-									<li><a onclick="clickScrollView('#id-5')">客户案例</a>
-										<ul class="sub-menu">
-											<li><a href="./DevOpsList.html">DevOps</a>
-											</li>
-											<li><a href="./BigDataList.html">BigData</a>
-											</li>
-											<li><a href="./MigrationList.html">Migration</a>
-											</li>
-											<li><a href="./MspList.html">云托管</a>
-											</li>
-										</ul>
-									</li>
-									<li><a href="./index.html#id-6">新闻资讯</a>
-									</li>
-									<li><a href="./index.html#id-7">联系我们</a>
-									</li>
-								</ul><!-- onepage-menu -->
-	
-								<div class="navbar-toggle"><span></span><span></span><span></span></div>
-							</nav><!-- End / onepage-nav -->
-	
-						</div>
-					</div>
-				</div>
-			</header><!-- End / header -->
-
-			<!-- banner -->
-			<div class="pages-banner">
-				<div class="pages-banner-content">
-					<div class="container">
-						<h1 class="banner-title hide-to-left">MSP云托管服务提供商</h1>
-						<p class="banner-content hide-to-right lead">管理、优化、增强云平台</p>
-					</div>
+					<h1 class="banner-title hide-to-left">MSP云托管服务提供商</h1>
+					<p class="banner-content hide-to-right lead">管理、优化、增强云平台</p>
 				</div>
 			</div>
-			<!-- End / banner -->
+		</div>
+		<!-- End / banner -->
 
-			<!-- breadcrumb -->
-			<div class="bc-content">
-				<div class="container breadcrumb">
-					<ul>
-						<li><a href="./index.html" class="home"></a></li>
-						<li><a href="#">解决方案</a></li>           
-					</ul>
-				</div>
+		<!-- breadcrumb -->
+		<div class="bc-content">
+			<div class="container breadcrumb">
+				<ul>
+					<li><a href="./index.html" class="home"></a></li>
+					<li><a href="#">解决方案</a></li>
+				</ul>
 			</div>
-			<!-- End / breadcrubm -->
+		</div>
+		<!-- End / breadcrubm -->
 
-			<!-- Content-->
-			<div class="md-content">
+		<!-- Content-->
+		<div class="md-content">
 
-				<!-- Section -->
-				<section class="md-section bg-gray" id="id-2">
-					<div class="container solution contxt">
-						<section>
-							<div>
-								<p class="solution-title">&nbsp;&nbsp;管理、优化、增强云平台</p>
-								<div class="solution-img"><img src="./../assets/img/msp/index.png" alt=""></div>
-								<p class="solution-paragraph">
-								• 随着企业基础环境的多元化，基于传统服务器的环境已经无法满足现代企业的发展，越来越多的企业正在极力在寻求云上解决方案，希望能在云模型中找到正确的服务组合，以满足目前需求和未来的发展规划。
-								</p>
-								<p class="solution-paragraph">
-								• 云计算为企业转向数字化业务奠定了基础，而公有云平台可以提供边缘计算、AI、机器学习和5G之类的技术的支持。归根结底，这每一项技术都需要像公共云IaaS这种可扩展、有弹性和高容量的基础设施平台提供支撑。
-								</p>
-								<p class="solution-paragraph">
+			<!-- Section -->
+			<section class="md-section bg-gray" id="id-2">
+				<div class="container solution contxt">
+					<section>
+						<div>
+							<p class="solution-title">&nbsp;&nbsp;管理、优化、增强云平台</p>
+							<div class="solution-img"><img src="./../assets/img/msp/index.png" alt=""></div>
+							<p class="solution-paragraph">
+								•
+								随着企业基础环境的多元化，基于传统服务器的环境已经无法满足现代企业的发展，越来越多的企业正在极力在寻求云上解决方案，希望能在云模型中找到正确的服务组合，以满足目前需求和未来的发展规划。
+							</p>
+							<p class="solution-paragraph">
+								•
+								云计算为企业转向数字化业务奠定了基础，而公有云平台可以提供边缘计算、AI、机器学习和5G之类的技术的支持。归根结底，这每一项技术都需要像公共云IaaS这种可扩展、有弹性和高容量的基础设施平台提供支撑。
+							</p>
+							<p class="solution-paragraph">
 								• 云MSP拥有填补技术和管理空白所需的云技术专业知识。通过将云运营的全部责任移交给云托管服务提供商（MSP），“云托管服务”为您提供了全面的云管理支持。
-								</p>
-								<p class="solution-paragraph">
+							</p>
+							<p class="solution-paragraph">
 								• 据Gartner数据显示，全球公共云 IaaS 市场在2019年猛增37.3%，达到445亿美元（3100亿人民币），远高于2018年的324亿美元。
-								</p>
-							</div>
+							</p>
+						</div>
 						<section>
 							<div>
 								<p class="solution-title">&nbsp;&nbsp;为什么选择云托管服务</p>
 								<p class="solution-paragraph">
-								随着公有云使用的快速稳定增长，面对云基础设施的多元化，如何进行有效的管理是大多数企业关心的主要问题，很多企业会选择不同的方式，来管理自己的云环境，比如有些企业花费时间和精力培养自己的云专家，而有些企业会选择使用MSP云托管服务来降低目前问题的复杂性；但是不管做出什么选择，都是为了能够更好的管理自己的云环境，那么如果管理不当可能会导致不好的影响：
+									随着公有云使用的快速稳定增长，面对云基础设施的多元化，如何进行有效的管理是大多数企业关心的主要问题，很多企业会选择不同的方式，来管理自己的云环境，比如有些企业花费时间和精力培养自己的云专家，而有些企业会选择使用MSP云托管服务来降低目前问题的复杂性；但是不管做出什么选择，都是为了能够更好的管理自己的云环境，那么如果管理不当可能会导致不好的影响：
 								</p>
 								<p class="solution-paragraph"><strong>一、数据泄露导致的损失</strong></p>
 								<p class="solution-paragraph">
-								与传统的企业网络一样，云上依旧会面临众多的威胁，由于云服务器存储着更大量的数据，所以面临的威胁也越来越大，比如数据泄露，外部接口和API接口的攻击等都会成为数据泄漏的隐患，也会让很多企业面临着个人信息丢失和企业健康信息甚至商业机密、知识产权等诸多领域的严重威胁，而为了保证企业安全，则会花费巨大的人力物力来降低风险。
+									与传统的企业网络一样，云上依旧会面临众多的威胁，由于云服务器存储着更大量的数据，所以面临的威胁也越来越大，比如数据泄露，外部接口和API接口的攻击等都会成为数据泄漏的隐患，也会让很多企业面临着个人信息丢失和企业健康信息甚至商业机密、知识产权等诸多领域的严重威胁，而为了保证企业安全，则会花费巨大的人力物力来降低风险。
 								</p>
 								<p class="solution-paragraph"><strong>二、系统漏洞导致的损失</strong></p>
 								<p class="solution-paragraph">
-								长期以来，系统漏洞或程序中的安全缺陷问题一直是大家担心的主要问题，也是很多黑客最擅长突破的关口，随着云租户规模的迅猛增加，由平台的便捷性导致的不同租户之间的数据传输、数据共享变的越来越快捷，同个系统里面的数据风险逐渐提升，如何在规避风险的同时降低成本是很多企业需要考虑的问题。而且，降低系统漏洞风险的花费往往十分不菲。如何尽可能的将漏洞快速修复的工作通过固化至自动化工作流程或者通过持续闭环实现使我们亟待解决的问题。</p>
+									长期以来，系统漏洞或程序中的安全缺陷问题一直是大家担心的主要问题，也是很多黑客最擅长突破的关口，随着云租户规模的迅猛增加，由平台的便捷性导致的不同租户之间的数据传输、数据共享变的越来越快捷，同个系统里面的数据风险逐渐提升，如何在规避风险的同时降低成本是很多企业需要考虑的问题。而且，降低系统漏洞风险的花费往往十分不菲。如何尽可能的将漏洞快速修复的工作通过固化至自动化工作流程或者通过持续闭环实现使我们亟待解决的问题。
+								</p>
 								<p class="solution-paragraph"><strong>三、内部行为导致的损失</strong></p>
 								<p class="solution-paragraph">
-								内部威胁来源于存在多处：在职或者离职员工、系统管理员、外包人员、商业伙伴。恶意行为包括从数据窃取到报复行为。在云环境中，内部人员可以摧毁整个IT基础设施或进行数据的操作。依赖于单独的云服务提供的安全系统，如何利用最小权限原则，实现启动日志记录、监测、审计管理员形成最佳实践是目前最好的规避方案。</p>
+									内部威胁来源于存在多处：在职或者离职员工、系统管理员、外包人员、商业伙伴。恶意行为包括从数据窃取到报复行为。在云环境中，内部人员可以摧毁整个IT基础设施或进行数据的操作。依赖于单独的云服务提供的安全系统，如何利用最小权限原则，实现启动日志记录、监测、审计管理员形成最佳实践是目前最好的规避方案。
+								</p>
 								<p class="solution-paragraph"><strong>四、数据丢失</strong></p>
 								<p class="solution-paragraph">
-								近年来，因操作失误导致数据丢失的事件逐步变得稀少，但是恶意攻击者已经知道永久删除云上数据来损害公司利益，云数据中心同任何设施一样，同样面临着自然灾害的隐患。通常是通过两地三中心的原则采用异地容灾备份来维护应用和数据作为加强保护措施。为满足业务连续性和灾难恢复演练，一般建议采用合理的备份机制。在云环境中日常数据备份和离线存储的仍然至关重要。而数据永久丢失的责任并只由云服务商承担，一旦客户在数据上云之前对此进行加密操作，客户必须妥善保管密钥，否则一旦密钥丢失，这些数据也将完全丢失。</p>
+									近年来，因操作失误导致数据丢失的事件逐步变得稀少，但是恶意攻击者已经知道永久删除云上数据来损害公司利益，云数据中心同任何设施一样，同样面临着自然灾害的隐患。通常是通过两地三中心的原则采用异地容灾备份来维护应用和数据作为加强保护措施。为满足业务连续性和灾难恢复演练，一般建议采用合理的备份机制。在云环境中日常数据备份和离线存储的仍然至关重要。而数据永久丢失的责任并只由云服务商承担，一旦客户在数据上云之前对此进行加密操作，客户必须妥善保管密钥，否则一旦密钥丢失，这些数据也将完全丢失。
+								</p>
 								<p class="solution-paragraph"><strong>五、云资源滥用</strong></p>
 								<p class="solution-paragraph">
-								云资源可以被黑色/灰色产业链利用进行譬如在攻击时使用计算资源进行破解、运行僵木蠕实行攻击，发用垃圾邮件、发送钓鱼邮件、发布恶意内容等。云服务提供商需要识别这些滥用资源的行为，例如识别网络流量中是否存在攻击，为客户提供安全检查工具去评估客户云环境的安全度。客户也应确保服务商提供了相应的检查机制。虽然有时候客户不会被这种类型的恶意软件直接感染，但是滥用云服务的情况会对影响服务可用性和导致数据丢失。</p>
+									云资源可以被黑色/灰色产业链利用进行譬如在攻击时使用计算资源进行破解、运行僵木蠕实行攻击，发用垃圾邮件、发送钓鱼邮件、发布恶意内容等。云服务提供商需要识别这些滥用资源的行为，例如识别网络流量中是否存在攻击，为客户提供安全检查工具去评估客户云环境的安全度。客户也应确保服务商提供了相应的检查机制。虽然有时候客户不会被这种类型的恶意软件直接感染，但是滥用云服务的情况会对影响服务可用性和导致数据丢失。
+								</p>
 								<p class="solution-paragraph"><strong>六、DDOS攻击</strong></p>
 								<p class="solution-paragraph">
-								Ddos攻击在近些年来对服务的可用性造成的影响越来越大，系统会因Ddos而运行缓慢或者服务响应超时。Ddos攻击在按需付费场景下会消耗处理大量的系统资源，客户或许不得不对此支付高昂的费用。云服务提供商在处理Ddos事件一般会比客户得心应手，关键在于提前演练计划，在事件发生时降低事态，让管理员处理这些事情也可以获取到足够的支持和资源。</p>
+									Ddos攻击在近些年来对服务的可用性造成的影响越来越大，系统会因Ddos而运行缓慢或者服务响应超时。Ddos攻击在按需付费场景下会消耗处理大量的系统资源，客户或许不得不对此支付高昂的费用。云服务提供商在处理Ddos事件一般会比客户得心应手，关键在于提前演练计划，在事件发生时降低事态，让管理员处理这些事情也可以获取到足够的支持和资源。
+								</p>
 								<p class="solution-paragraph"><strong>七、技术共享带来的损失</strong></p>
 								<p class="solution-paragraph">
-								共享技术中的漏洞给云计算构成重大威胁，云服务提供商共享基础设施、平台、应用等，如果漏洞在任何一个层面发生，均会波及每个客户。报告显示“一个漏洞或一次错误的配置将对整个云服务商层面造成危害”。</p>
+									共享技术中的漏洞给云计算构成重大威胁，云服务提供商共享基础设施、平台、应用等，如果漏洞在任何一个层面发生，均会波及每个客户。报告显示“一个漏洞或一次错误的配置将对整个云服务商层面造成危害”。
+								</p>
 								<p class="solution-paragraph"><strong>八、运营风险上升</strong></p>
 								<p class="solution-paragraph">
-								操作不当多少会影响现有的运营。但凡遇到任何失误，都有可能会在云基础架构上运行的流程中造成严重的运营风险，中断系统运行。</p>
-								<p class="solution-paragraph"><strong>完美的云托管服务提供商可以解决上述问题，以及有效的云基础架构管理所需的许多此类问题。</strong></p>
+									操作不当多少会影响现有的运营。但凡遇到任何失误，都有可能会在云基础架构上运行的流程中造成严重的运营风险，中断系统运行。</p>
+								<p class="solution-paragraph">
+									<strong>完美的云托管服务提供商可以解决上述问题，以及有效的云基础架构管理所需的许多此类问题。</strong></p>
 							</div>
 						</section>
 						<section>
 							<div>
 								<p class="solution-title">&nbsp;&nbsp;了解云托管服务</p>
 								<p class="solution-paragraph">
-								在日常运维中，管理IT基础架构可能会付出很大的成本，具体体现在付出大量的人力和物力。 云托管服务选择将云上IT环境交由第三方云MSP服务提供商，通过云托管服务可以减轻运维压力、实现云上架构优化、成本优化、加强云基础环境的安全性，同时，可以专注于公司的的战略发展规划。云托管服务可以架构优化、成本优化为抓手，覆盖不仅仅是在云服务监控、成本优化和架构迁移、重构、部署等价格方面，更是涵扩深度学习、机器学习、微服务、无服务等更多方面。从而构建多样化、全方位立体的生态系统。帮助上云企业设计、构建和管理针对以下九个关键组件的综合云解决方案，以满足云上的最佳实践：
+									在日常运维中，管理IT基础架构可能会付出很大的成本，具体体现在付出大量的人力和物力。
+									云托管服务选择将云上IT环境交由第三方云MSP服务提供商，通过云托管服务可以减轻运维压力、实现云上架构优化、成本优化、加强云基础环境的安全性，同时，可以专注于公司的的战略发展规划。云托管服务可以架构优化、成本优化为抓手，覆盖不仅仅是在云服务监控、成本优化和架构迁移、重构、部署等价格方面，更是涵扩深度学习、机器学习、微服务、无服务等更多方面。从而构建多样化、全方位立体的生态系统。帮助上云企业设计、构建和管理针对以下九个关键组件的综合云解决方案，以满足云上的最佳实践：
 								</p>
 								<div class="solution-img"><img src="./../assets/img/msp/pic.png" alt=""></div>
 								<div style="text-align: center;">
@@ -194,100 +245,362 @@
 								<p class="solution-paragraph">6、业务连续性可主动识别运行风险，并减轻和管理这些风险</p>
 							</div>
 						</section>
-
+				
 						<section>
-								<p class="solution-title">&nbsp;&nbsp;MSP服务带来的好处：</p>
-								<div class="solution-img"><img src="./../assets/img/msp/pic2.jpg" alt=""></div><br>
-								<p class="solution-paragraph"><strong>服务等级协议</strong></p>
-								<p class="solution-paragraph">通过减少导致连接失失败的超时和丢包，提高应用的可用性；</p>
-								<p class="solution-paragraph">显著提高应用响应时间。在远程站点的用户不再忍受滞后和糟糕性能—即使是文件共享或web浏览等基本应用</p>
-								<p class="solution-paragraph">通过欺骗协议，优化器可以防止多往返和多路复用连接以提高吞吐量</p>
-								<p class="solution-paragraph">减少数据包丢失（甚至对于UDP应用）以提高语音和视频应用的性能</p>
-								<p class="solution-paragraph">当部署的解决方案包含低端优化器（无论是物理还是虚拟设备）或安装在个人电脑上的软客户端时，为移动和远程办公人员改进服务等等</p>
+							<p class="solution-title">&nbsp;&nbsp;MSP服务带来的好处：</p>
+							<div class="solution-img"><img src="./../assets/img/msp/pic2.jpg" alt=""></div><br>
+							<p class="solution-paragraph"><strong>服务等级协议</strong></p>
+							<p class="solution-paragraph">通过减少导致连接失失败的超时和丢包，提高应用的可用性；</p>
+							<p class="solution-paragraph">显著提高应用响应时间。在远程站点的用户不再忍受滞后和糟糕性能—即使是文件共享或web浏览等基本应用</p>
+							<p class="solution-paragraph">通过欺骗协议，优化器可以防止多往返和多路复用连接以提高吞吐量</p>
+							<p class="solution-paragraph">减少数据包丢失（甚至对于UDP应用）以提高语音和视频应用的性能</p>
+							<p class="solution-paragraph">当部署的解决方案包含低端优化器（无论是物理还是虚拟设备）或安装在个人电脑上的软客户端时，为移动和远程办公人员改进服务等等
+							</p>
 						</section>
 						<section>
-								<p class="solution-paragraph"><strong>强大的专家团队</strong></p>
-								<p class="solution-paragraph">博思云为是一家专注于云服务的公司，能够为客户提供“MSP，大数据，DevOps”等服务，在各个服务方面，公司拥有相应的专家服务团队以及丰富的实战经验，经过多年的项目实施，并结合AWS的Well-architected和Landing zone已经完善出自己的服务体系和方法论，同时公司有98%的工程师已经取得有AWS专业认证（架构师/DevOps工程师/大数据工程师），有些也获得其他厂商的专业认证（例如：Redhat/Oracle/ITIL/）。公司已经通过AWS的代付，进阶级的认证，也获得了AWS的专业能力认证例如：Oracle，大数据，DevOps等，也是AWS公有云厂商的核心合作伙伴，并通过ISO9001质量控制体系、ISO14001环境管理体系和ISO18001职业健康安全管理体系的认证。开发了自己的公有云混合管理平台，不同应用场景的数据迁移工具、可以在数据迁云前与数据迁云后从监控、故障处理、调优，安全保障等的云运维管理，我们将以快速与创新的方式为客户提供最有价值的专业服务</p>
+							<p class="solution-paragraph"><strong>强大的专家团队</strong></p>
+							<p class="solution-paragraph">
+								博思云为是一家专注于云服务的公司，能够为客户提供“MSP，大数据，DevOps”等服务，在各个服务方面，公司拥有相应的专家服务团队以及丰富的实战经验，经过多年的项目实施，并结合AWS的Well-architected和Landing
+								zone已经完善出自己的服务体系和方法论，同时公司有98%的工程师已经取得有AWS专业认证（架构师/DevOps工程师/大数据工程师），有些也获得其他厂商的专业认证（例如：Redhat/Oracle/ITIL/）。公司已经通过AWS的代付，进阶级的认证，也获得了AWS的专业能力认证例如：Oracle，大数据，DevOps等，也是AWS公有云厂商的核心合作伙伴，并通过ISO9001质量控制体系、ISO14001环境管理体系和ISO18001职业健康安全管理体系的认证。开发了自己的公有云混合管理平台，不同应用场景的数据迁移工具、可以在数据迁云前与数据迁云后从监控、故障处理、调优，安全保障等的云运维管理，我们将以快速与创新的方式为客户提供最有价值的专业服务
+							</p>
 						</section>
 						<section>
-								<p class="solution-paragraph"><strong>数据安全与恢复</strong></p>
-								<p class="solution-paragraph">通过云上原生的服务对系统进行安全维护之外还有资深的合作伙伴来进行全方位立体维护，降低系统的风险，从而减少遭受数据丢失、泄露等方面的可能性，博思可通过成熟的数据备份方案来进行安全上的防护，从而保证数据的安全</p>
+							<p class="solution-paragraph"><strong>数据安全与恢复</strong></p>
+							<p class="solution-paragraph">
+								通过云上原生的服务对系统进行安全维护之外还有资深的合作伙伴来进行全方位立体维护，降低系统的风险，从而减少遭受数据丢失、泄露等方面的可能性，博思可通过成熟的数据备份方案来进行安全上的防护，从而保证数据的安全
+							</p>
 						</section>
 						<section>
-								<p class="solution-paragraph"><strong>快速响应时间</strong></p>
-								<p class="solution-paragraph">在本地解决问题与通过网络远程解决问题不同。对于云托管服务，服务提供商有责任确保在出现任何问题时快速响应。如果在本地完成，则可能会花费更多时间。通过7*24小时管理和高效的网络基础架构，云托管服务提供了强大的基础架构支持。可以监视，扫描，报告，更新补丁，将网络运营与核心业务目标集成和对齐。在集中式数据中心管理所有应用程序和服务。因此，远程数据访问，提高的生产率，有效的资源利用，足够的存储和备份以及其他优点将有很大的范围</p>
+							<p class="solution-paragraph"><strong>快速响应时间</strong></p>
+							<p class="solution-paragraph">
+								在本地解决问题与通过网络远程解决问题不同。对于云托管服务，服务提供商有责任确保在出现任何问题时快速响应。如果在本地完成，则可能会花费更多时间。通过7*24小时管理和高效的网络基础架构，云托管服务提供了强大的基础架构支持。可以监视，扫描，报告，更新补丁，将网络运营与核心业务目标集成和对齐。在集中式数据中心管理所有应用程序和服务。因此，远程数据访问，提高的生产率，有效的资源利用，足够的存储和备份以及其他优点将有很大的范围
+							</p>
 						</section>
 						<section>
-								<p class="solution-paragraph"><strong>及时的系统更新</strong></p>
-								<p class="solution-paragraph">依靠内部IT团队进行常规技术和软件升级通常会浪费时间，培训和其他资源。而迁移到云环境并依赖于云MSP可以使您的数据中心保持最新状态，并及时更新技术。仅依靠内部的技术人员来对云上技术进行适应还需要一段时间，博思团队拥有丰富的经验和完善的架构可以大大降低更新时间，始终保持在最新状态</p>
+							<p class="solution-paragraph"><strong>及时的系统更新</strong></p>
+							<p class="solution-paragraph">
+								依靠内部IT团队进行常规技术和软件升级通常会浪费时间，培训和其他资源。而迁移到云环境并依赖于云MSP可以使您的数据中心保持最新状态，并及时更新技术。仅依靠内部的技术人员来对云上技术进行适应还需要一段时间，博思团队拥有丰富的经验和完善的架构可以大大降低更新时间，始终保持在最新状态
+							</p>
 						</section>
 						<section>
-								<p class="solution-paragraph"><strong>成本优化</strong></p>
-								<p class="solution-paragraph">博思可以依托丰富的客户案例以及对云资源的了解，计划您在IT服务上的支出。制定针对IT支出量身定制的每月服务计划，并优化对IT支持的投资。通过分析成本效益模型来选择最合适的资源类型以及最佳付费方式来对成本进行优化</p>
+							<p class="solution-paragraph"><strong>成本优化</strong></p>
+							<p class="solution-paragraph">
+								博思可以依托丰富的客户案例以及对云资源的了解，计划您在IT服务上的支出。制定针对IT支出量身定制的每月服务计划，并优化对IT支持的投资。通过分析成本效益模型来选择最合适的资源类型以及最佳付费方式来对成本进行优化
+							</p>
 						</section>
-						<br>
-			
-					</div>
-				</section>
-				<!-- End / Section -->
-
-
-			</div>
-			<!-- End / Content-->
-			
-			<!-- footer -->
-			<div class="footer">
-				<div id="back-to-top"><i class="pe-7s-angle-up"></i></div>
-				<div class="container">
-
-					<div class="footer__wrapper">
-
-						<div class="footer__social">
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-facebook"></i>
-										</a><!-- End / social-icon -->
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-twitter"></i>
-										</a><!-- End / social-icon -->
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
-										</a><!-- End / social-icon -->
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-behance"></i>
-										</a><!-- End / social-icon -->
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-vimeo"></i>
-										</a><!-- End / social-icon -->
-										
-						</div>
-
-						<p class="footer__copy">Copyright @ 深圳市博思云为科技有限公司    <a href="http://www.beian.miit.gov.cn" style="color:white">粤ICP备16041562号-1</a></p>
-	
-
-					</div>
+						<br />
+						<h3 style="font-size:30px;text-align: center;">博思云为管理服务列表</h3>
+						<table cellpadding="0" class="table_header">
+							<thead>
+								<tr>
+									<th colspan="1" rowspan="1">服务范围</th>
+									<th colspan="1" rowspan="1" style="width: 30%;">主要任务</th>
+									<th colspan="1" rowspan="1" style="width: 18%;">独立客户</th>
+									<th colspan="1" rowspan="1" style="width: 18%;">企业级AWS管理服务</th>
+									<th colspan="1" rowspan="1" style="width: 18%;">核心级AWS管理服务</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">一般</td>
+									<td>非技术问题支持(电话)</td>
+									<td>O</td>
+									<td>O</td>
+									<td>O</td>
+									
+								</tr>
+								<tr>
+									<td>服务台基础技术支持(邮件)</td>
+									<td>O</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="3">部署方式</td>
+									<td>基础架构设计</td>
+									<td>附加费用</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>实施和配置</td>
+									<td>附加费用</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>测试和Poc</td>
+									<td>附加费用</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="5">管理</td>
+									<td>7*24小时服务台专属支持</td>
+									<td>×</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>24×365监控</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>即时通讯工具提醒(微信，钉钉)</td>
+									<td>×</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>云环境定期检查</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>每月一次WA架构优化</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="5">运作方式</td>
+									<td>24×365监控</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>事件管理</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>身份和访问管理</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>操作系统管理</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>标准SLA</td>
+									<td>×</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="6">技术支援</td>
+									<td>5×8小时专属电话支持</td>
+									<td>×</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>7×24小时专属电话支持</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>紧急情况1小时现场支持(视地区)</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>主动监控事件预防</td>
+									<td>×</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>账号权限故障排除</td>
+									<td>×</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>合规性检查相关服务支持</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="2">运营优化</td>
+									<td>预留和竞价型实例推荐/购买支持</td>
+									<td>×</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>架构审查和重新设计</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td rowspan="5">高级监控</td>
+									<td>配置最佳监视阈值</td>
+									<td>×</td>
+									<td>×</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>基于历史数据的动态资源监控(Lambda)</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>应用监控</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>独立部署项目</td>
+								</tr>
+								<tr>
+									<td>数据库监控</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>O</td>
+								</tr>
+							
+								<tr>
+									<td>基于机器学习的日志异常检测</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>O</td>
+								</tr>
+								
+								<tr>
+									<td rowspan="3">增值服务</td>
+									<td>DevOps AWS上云及管理服务</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>独立部署项目</td>
+								</tr>
+								<tr>
+									<td>BigData AWS上云及管理服务</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>独立部署项目</td>
+								</tr>
+								
+								<tr>
+									<td>Oracle 数据库AWS上云及管理服务</td>
+									<td>×</td>
+									<td>独立部署项目</td>
+									<td>独立部署项目</td>
+								</tr>
+					
+								<tr>
+									<td rowspan="4">培训教育</td>
+									<td>AWS基础教育</td>
+									<td>附加费用</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>AWS安全培训及动手实验</td>
+									<td>附加费用</td>
+									<td>O</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>AWS网络培训及动手实验</td>
+									<td>附加费用</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+								<tr>
+									<td>AWS数据服务及动手实验</td>
+									<td>附加费用</td>
+									<td>附加费用</td>
+									<td>O</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
 				</div>
-			</div><!-- End / footer -->
-			<div id="link-to-top"><i class="pe-7s-angle-up"></i></div>
+			</section>
+			<!-- End / Section -->
+
+
 		</div>
-		<!-- Vendors-->
-		<script type="text/javascript" src="../assets/vendors/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery.easing/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/swiper/swiper.jquery.js"></script>
-		<!-- <script type="text/javascript" src="../assets/vendors/menu/menu.js"></script> -->
-		<script type="text/javascript" src="../assets/vendors/typed/typed.min.js"></script>
-		<!-- App-->
-		<script type="text/javascript" src="../assets/js/main.js"></script>
-		<script type="text/javascript" src="../assets/js/sub.js"></script>
-	</body>
+		<!-- End / Content-->
+
+		<!-- footer -->
+		<div class="footer">
+			<div id="back-to-top"><i class="pe-7s-angle-up"></i></div>
+			<div class="container">
+
+				<div class="footer__wrapper">
+
+					<div class="footer__social">
+
+						<!-- social-icon -->
+						<a class="social-icon" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+						</a><!-- End / social-icon -->
+
+						<!-- social-icon -->
+						<a class="social-icon" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+						</a><!-- End / social-icon -->
+
+						<!-- social-icon -->
+						<a class="social-icon" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+						</a><!-- End / social-icon -->
+
+						<!-- social-icon -->
+						<a class="social-icon" href="#"><i class="social-icon__icon fa fa-behance"></i>
+						</a><!-- End / social-icon -->
+
+						<!-- social-icon -->
+						<a class="social-icon" href="#"><i class="social-icon__icon fa fa-vimeo"></i>
+						</a><!-- End / social-icon -->
+
+					</div>
+
+					<p class="footer__copy">Copyright @ 深圳市博思云为科技有限公司 <a href="http://www.beian.miit.gov.cn"
+							style="color:white">粤ICP备16041562号-1</a></p>
+
+
+				</div>
+			</div>
+		</div><!-- End / footer -->
+		<div id="link-to-top"><i class="pe-7s-angle-up"></i></div>
+	</div>
+	<!-- Vendors-->
+	<script type="text/javascript" src="../assets/vendors/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="../assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+	<script type="text/javascript" src="../assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+	<script type="text/javascript" src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+	<script type="text/javascript" src="../assets/vendors/swiper/swiper.jquery.js"></script>
+	<!-- <script type="text/javascript" src="../assets/vendors/menu/menu.js"></script> -->
+	<script type="text/javascript" src="../assets/vendors/typed/typed.min.js"></script>
+	<!-- App-->
+	<script type="text/javascript" src="../assets/js/main.js"></script>
+	<script type="text/javascript" src="../assets/js/sub.js"></script>
+</body>
+
 </html>
+<script>
+	console.log(
+	document.getElementsByTagName("td")[3].innerHTML);
+	var td = document.getElementsByTagName("td")
+	for(let i =0;i<td.length;i++){
+		if(td[i].innerHTML == "×"){
+			td[i].className = "fontSize"
+		}
+	}
+</script>
