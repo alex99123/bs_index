@@ -1,236 +1,320 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>BosiCloud - MSP</title>
-		<link rel="shortcut icon" href="./favicon.ico">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- Fonts-->
-		<link rel="stylesheet" type="text/css" href="../assets/fonts/fontawesome/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../assets/fonts/pe-icon/pe-icon.css">
-		<!-- Vendors-->
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/grid.css">
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/magnific-popup/magnific-popup.min.css">
-		<link rel="stylesheet" type="text/css" href="../assets/vendors/swiper/swiper.css">
-		<!-- App & fonts-->
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-		<link rel="stylesheet" type="text/css" href="../assets/css/main.css"><!--[if lt IE 9]>
+
+<head>
+    <title>BosiCloud - MSP</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fonts-->
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/pe-icon/pe-icon.css">
+    <!-- Vendors-->
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/grid.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/swiper/swiper.css">
+    <!-- App & fonts-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" type='text/css' href="../assets/css/sub.css">
-	</head>
-	
-	<body>
-		<div class="page-wrap">
-			
-			<!-- header -->
-			<header class="header header--visibility">
-				<div class="container">
-					<div class="header__inner">
-						<div class="header__logo"><a href="index.html"><img src="../assets/img/logo.png" alt="" /></a></div>
-						<div class="header__menu">
-	
-							<!-- onepage-nav -->
-							<nav class="onepage-nav">
-	
-								<!-- onepage-menu -->
-								<ul class="onepage-menu">
-									<li class="current-menu-item"><a href="./index.html">首页</a>
-									</li>
-									<li><a href="./index.html">关于我们</a>
-										<ul class="sub-menu">
-											<li><a href="./product.html">产品设备</a>
-											</li>
-										</ul>
-									</li>
-									</li>
-									<li><a href="./index.html#id-3">能力认证</a>
-									</li>
-		
-									<li><a onclick="clickScrollView('#id-4')">解决方案</a>
-										<ul class="sub-menu">
-											<li><a href="./devOps.html">DevOps</a>
-											</li>
-											<li><a href="./bigDataAndAI.html">BigData</a>
-											</li>
-											<li><a href="./Migration.html">Migration</a>
-											</li>
-											<li><a href="./msp.html">MSP</a>
-											</li>
-											<li><a href="./logAndScheme.html">日志管理与集成</a>
-											</li>
-										</ul>
-									</li>
-	
-	
-									<li><a onclick="clickScrollView('#id-5')">客户案例</a>
+    <link rel="stylesheet" type='text/css' href="../assets/css/sub.css">
+</head>
 
-										<ul class="sub-menu">
-											<li><a href="./DevOpsList.html">DevOps</a>
-											</li>
-											<li><a href="./BigDataList.html">BigData</a>
-											</li>
-											<li><a href="./MigrationList.html">Migration</a>
-											</li>
-											<li><a href="./MspList.html">云托管</a>
-											</li>
-										</ul>
+<body>
+    <div class="page-wrap">
 
-									</li>
-									<li><a href="./index.html#id-6">新闻资讯</a>
-									</li>
-									<li><a href="./index.html#id-7">联系我们</a>
-									</li>
-								</ul><!-- onepage-menu -->
-	
-								<div class="navbar-toggle"><span></span><span></span><span></span></div>
-							</nav><!-- End / onepage-nav -->
-	
-						</div>
-					</div>
-				</div>
-			</header><!-- End / header -->
+        <!-- header -->
+        <header class="header header--visibility">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo"><a href="index.html"><img src="../assets/img/logo.png" alt="" /></a></div>
+                    <div class="header__menu">
 
-			<!-- banner -->
-			<div class="pages-banner">
-				<div class="pages-banner-content">
-					<div class="container">
-						<h1 class="banner-title hide-to-left">齐心集团云托管</h1>
-						<p class="banner-content hide-to-right lead">相关领域：相关领域：合规性、运维、无服务器</p>
-					</div>
-				</div>
-			</div>
-			<!-- End / banner -->
+                        <!-- onepage-nav -->
+                        <nav class="onepage-nav">
 
-			<!-- breadcrumb -->
-			<div class="bc-content">
-				<div class="container breadcrumb">
-					<ul>
-						<li><a href="./index.html" class="home"></a></li>
-						<li><a href="#">客户案例</a></li>            
-					</ul>
-				</div>
-			</div>
-			<!-- End / breadcrubm -->
+                            <!-- onepage-menu -->
+                            <ul class="onepage-menu">
+                                <li class="current-menu-item"><a href="./index.html">首页</a>
+                                </li>
+                                <li><a href="./index.html">关于我们</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="./product.html">产品设备</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
+                                <li><a href="./index.html#id-3">能力认证</a>
+                                </li>
 
-			<!-- Content-->
-			<div class="md-content">
+                                <li><a onclick="clickScrollView('#id-4')">解决方案</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="./devOps.html">DevOps</a>
+                                        </li>
+                                        <li><a href="./bigDataAndAI.html">BigData</a>
+                                        </li>
+                                        <li><a href="./Migration.html">Migration</a>
+                                        </li>
+                                        <li><a href="./msp.html">MSP</a>
+                                        </li>
+                                        <li><a href="./logAndScheme.html">日志管理与集成</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-				<!-- Section -->
-				<section class="md-section bg-gray" id="id-2">
-					<div class="container solution contxt">
-						<section>
-							<div style="text-align: center;">
-								<img src="../assets/img/msp/qx.png" style="width: 550px; padding-bottom: 70px; padding-top: 60px;">
-							</div>
 
-							<div>
-								<p class="solution-sub-title">客户简介:</p>	
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">
-                                    深圳齐心集团股份有限公司,专注政企采购服务20余年，于2009年在深圳A股成功上市，是中国B2B办公物资服务和云视频的龙头企业，服务全球120多个国家和地区。 齐心集团秉持“夯实主业、打造平台、布局生态”的发展战略，致力于打造“硬件+软件+服务”的一站式办公服务平台，为用户提供高效企业综合服务解决方案。通过持续叠加商品品类与服务，齐心集团不断满足企业级客户的一站式办公采购和服务需求。</p>
-								<p class="solution-paragraph" style="margin-bottom: 20px; color: #748182;">
-                                    政采云(QoP)以互联网为基础，充分运用云计算和大数据技术，以政府采购电子化交易和管理为重点，涉及政府采购全流程、各领域、多用户，集政府采购网上交易、网上监管和网上服务为一体的综合性云服务平台。
-平台创新的电子卖场系统及项目采购(电子招投标)系统支持共计11种交易模式，同时提供了涵盖政府采购网、采购专家管理、供应商管理、中介代理机构管理、商品库管理、诚信预警、大数据分析及报表统计等采购业务与财政监管模块，并不断升级迭代。</p>
-							</div>
+                                <li><a onclick="clickScrollView('#id-5')">客户案例</a>
 
-							<div>
-								<p class="solution-sub-title">面临的问题:</p>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">1、缺乏自动化的供应和监视功能，自行运维存在相当的学习成本，无法获得SLA及服务台。</p>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">2、项目部署上线时间紧，任务重。自研管理系统无法满足业务上线时间要求。</p>
-								<p class="solution-paragraph" style="margin-bottom: 20px; color: #748182;">3、云计算资源不同于硬件资产，拥有极大地弹性和成本优化空间，齐心需要一种持续的模式优化云上资产。</p>
+                                    <ul class="sub-menu">
+                                        <li><a href="./DevOpsList.html">DevOps</a>
+                                        </li>
+                                        <li><a href="./BigDataList.html">BigData</a>
+                                        </li>
+                                        <li><a href="./MigrationList.html">Migration</a>
+                                        </li>
+                                        <li><a href="./MspList.html">云托管</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="./index.html#id-6">联系我们</a>
+                                </li>
+                            </ul><!-- onepage-menu -->
+
+                            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+                        </nav><!-- End / onepage-nav -->
+
+                    </div>
+                </div>
+            </div>
+        </header><!-- End / header -->
+
+        <!-- banner -->
+        <div class="pages-banner">
+            <div class="pages-banner-content">
+                <div class="container">
+                    <h1 class="banner-title hide-to-left">齐心集团云托管</h1>
+                    <p class="banner-content hide-to-right lead">相关领域：相关领域：合规性、运维、无服务器</p>
+                </div>
+            </div>
+        </div>
+        <!-- End / banner -->
+
+        <!-- breadcrumb -->
+        <div class="bc-content">
+            <div class="container breadcrumb">
+                <ul>
+                    <li><a href="./index.html" class="home"></a></li>
+                    <li><a href="#">客户案例</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End / breadcrubm -->
+
+        <!-- Content-->
+        <div class="md-content">
+
+            <!-- Section -->
+            <section class="md-section bg-gray" id="id-2">
+                <div class="container solution contxt">
+                    <section>
+                        <div style="text-align: left;">
+                            <img src="../assets/img/msp/qx-e.png" style="width: 200px;">
+                        </div>
+                        <h3 style="font-weight: bold;">AWS案例研究：齐心集团</h3>
+                        <p>2021</p>
+                        <div>
+                            <p style="color: #333;font-size: 14px;">
+                                <span style="color: #007eb9;">深圳齐心集团股份有限公司</span>
+                                （以下简称“齐心集团”）专注政企采购服务20余年，于2009年在深圳A股成功上市，是中国B2B办公物资服务和云视频的龙头企业，服务全球120多个国家和地区。齐心集团秉持“夯实主业、打造平台、布局生态”的发展战略，致力于打造“硬件+软件+服务”的一站式办公服务平台，为用户提供高效企业综合服务解决方案，通过持续叠加商品品类与服务，不断满足企业级客户的一站式办公采购和服务需求。
+                                <br />
+                                齐心集团始终坚持以企业级客户需求为导向，基于对客户办公需求的深刻理解，顺应办公物资电商化、集中化、集成化采购发展趋势，建立了B2B企业办公服务平台，有效提升了集采效率和客户体验，降低了综合办公成本。同时，齐心集团将SaaS作为软件服务的重要发展方向，目前形成了以云视频、云计算服务为战略业务，以大数据营销等为创新业务的业务矩阵。
+                            </p>
+                            <h6 style="color:#232f3e;font-weight: bold;font-size:20px">面临的挑战</h6>
+                            <p style="color: #333;font-size: 14px;">
+                                近年来，齐心集团业务高速发展，通过数字化转型，加速从传统的办公用品品牌制造商转向线上B2B的平台服务商。伴随企业发展战略方向的转变，齐心集团在业务形态上发生了较大的变化，渠道零售店模式已成为历史，其核心的电商平台和各式线上渠道已由齐心商城接棒。这意味着，齐心集团自身连接客户的方式和服务交付模式都发生了变化，所有交易过程都已转为线上完成。
+                                <br />
+                                围绕业务核心，齐心集团面向B端客户群展现的是一套现代化的互联网平台型产品服务交付体系，其背后则是一整套涵盖前、中、后端的数字化运营系统。齐心集团主营业务围绕国内2B政府采购、大型企业集采项目开展。目前，通过电商平台支持完成的业务量占比已高达90%，并每年保持30%-50%的高速增长。电商平台不仅是齐心集团核心的主业，更是下一阶段的发展重点。
+                                <br />
+                                齐心集团的商业模式不仅聚焦自己的产品，更以平台化的方式服务政企客户，连接线下服务商和上游品牌商，基于客户需求充分整合各式资源，提供一站式的办公用品解决方案。据了解，齐心商城电商平台现已覆盖150万SKU，各种大型企业集团客户达5000多个。
+                                <br />
+                                齐心集团自身的业务战略方向，为数字化转型创新提供了强力支撑，齐心集团对原有的IT基础架构和应用进行了全面梳理和重新规划，引入了云服务，重点解决了基础资源弹性差的问题，让基础架构有能力快速响应，第一时间适应业务发展需求。同时，在运维管理、安全合规等方面，云服务背后的相关资源也能为齐心集团提供长期可靠的支撑。
+                                <br />
+                                B2B电商平台是齐心集团商业模式的基础，大量的客户项目合作需要通过API对接的方式完成。“套用时下流行的表达，我们是典型的‘API经济’。”齐心集团首席信息官史海涛介绍，“很多政企客户有自己的商城和采购平台，包括与供应商的连接，都需要通过API的方式实现。早期，团队更多以一对一、项目制的方式做对接。随着各种对接模型及可能性的不断沉淀，我们希望基于大量项目基础和成功经验实现‘成果转化’，将商业模式产品化，不仅包括商品端，更涵盖面向整个B端客户群售前、售中、售后场景，以打造全生命周期的产品矩阵和服务体系。”
+                                <br />
+                                通过产品化的API实现快速高效、可高度复用的对接，在此理念指导下，齐心集团需要重构API，从基础架构层面找到合适的方案，解决“2B电商API没有共性化”这一关键问题，从而建立更强大的客户服务平台。
+                                <br />
+                            </p>
+                            <div class="flex-layout" style="background-color:#f5f5f5;padding: 20px 20px;">
+                                <div style="width:580px">
+                                    <img src="../assets/img/msp/qx-b.jpg" style="width:100%">
+                                </div>
+                                <div class="flex-layout">
+                                    <img src="../assets/img/msp/qx-c.png"
+                                        style="width:40px;height:35px;margin: 0px 45px;">
+                                    <p style="font-size:14px;color:#333;width:375px;margin: 30px 0;">
+                                        借助AWS无服务器计算架构，齐心集团可在三天内完成新的客户项目对接。同时，总拥有成本(Total Cost of
+                                        Ownership)整体下降了25%
+                                        <br />
+                                        <span style="margin-top:20px">
+                                            <b>史海涛</b>
+                                        </span>
+                                        <br />
+                                        <em>深圳齐心集团股份有限公司 首席信息官 </em>
+                                    </p>
+                                </div>
                             </div>
-
-							<div>
-								<p class="solution-sub-title">Bosicloud解决方案:</p>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">经过和齐心的深入讨论,Bosicloud团队和齐心项目组达成一致。Bosicloud成为齐心云托管服务的提供商(MSP)，在迁移和后续运维阶段帮助齐心管理，优化AWS云上资源。</p>
-								<div style="text-align: center;"><img src="../assets/img/msp/three.jpg" style="padding-bottom: 40px; padding-top: 20px;"></div>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">- 帮助齐心建设自动化的系统发布/更新流程，提高业务上线效率。</p>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">- 优化IT成本，通过持续的监控，为工作负载选择最合适的计算资源。显著降低齐心IT成本。</p>
-								<p class="solution-paragraph" style="margin-bottom: 0px; color: #748182;">- 在面对可预测的峰值时，Bosicloud和齐心的业务人员一起实时监控基础资源，保证系统可用性。面对不可预测的峰值时，Bosicloud根据警报配置弹性伸缩策略，维持系统整体可用性。</p>
-								<p class="solution-paragraph" style="margin-bottom: 20px; color: #748182;">- Bosicloud帮助齐心建设安全的云上资源中心，通过一系列自动化的方式，7x24小时保障云上安全。Bosicloud还拥有专门的安全团队通过统计算法和机器学习，持续加固云上安全环境。</p>
+                            <h6 style="color:#232f3e;font-weight: bold;font-size:20px">为什么选择AWS</h6>
+                            <p style="color: #333;font-size: 14px;">
+                                基础架构选型时，齐心集团前期与国内各大云服务供应商进行了细致沟通，通过对传统互联网开发，以及容器、分布式等技术仔细考量，结合自身产品特点和运营模式，决定引入无服务器计算架构，以支持业务快速扩展和增长，同时降低总拥有成本(Total
+                                Cost of Ownership)。
+                                <br />
+                                齐心集团最终选择AWS，主要是基于以下几点关键因素考虑：%，并每年保持30%-50%的高速增长。电商平台不仅是齐心集团核心的主业，更是下一阶段的发展重点。
+                                <br />
+                                齐心集团的商业模式不仅聚焦自己的产品，更以平台化的方式服务政企客户，连接线下服务商和上游品牌商，基于客户需求充分整合各式资源，提供一站式的办公用品解决方案。据了解，齐心商城电商平台现已覆盖150万SKU，各种大型企业集团客户达5000多个。
+                                <br />
+                                第一，AWS在无服务器计算架构领域的技术卓越，可轻松实现低耦合和免运维的托管服务架构。使用AWS高可用、高并发的无服务器架构，可有效降低资源使用成本和运维成本。
+                                <br />
+                                第二，从技术角度看，无需过多开发，即可充分利用AWS现有服务满足业务功能需求，加速产品化落地进程。
+                                <br />
+                                第三，AWS拥有大量企业上云的成功案例。在与AWS团队沟通的过程中，齐心集团对AWS赋能企业业务发展，进而帮助企业获得同业竞争优势的能力建立了直观、深刻的认识。从业务角度看，齐心集团希望通过AWS获得更好的收益。
+                                <br />
+                                第四，使用AWS，齐心集团可以摆脱过往大量无差异化的、低层次的资源投入。AWS无服务器计算架构技术成熟，支持按需扩展，无需过多规划服务容量。同时，多种服务类型可以持续赋能IT敏捷创新。
+                            </p>
+                            <div class="link-hover">
+                                <span>图1是齐心集团的无服务器架构示意图，所使用的AWS服务包括</span>
+                                <a href="https://www.amazonaws.cn/ec2/" target="_blank">Amazon Elastic Compute Cloud</a>
+                                <span> (Amazon EC2)、</span>
+                                <a href="https://www.amazonaws.cn/s3/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon Simple Storage Service</a>
+                                <span> (Amazon S3)、</span>
+                                <a href="https://www.amazonaws.cn/elasticloadbalancing/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Elastic Load Balancing</a>、
+                                <a href="https://www.amazonaws.cn/rds/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon Relational Database Service</a>
+                                <span> (Amazon RDS)、</span>
+                                <a href="https://www.amazonaws.cn/elasticache/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon ElastiCache</a>、
+                                <a href="https://www.amazonaws.cn/sqs/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon Simple Queue Service</a>
+                                <span> (Amazon SQS)、</span>
+                                <a href="https://www.amazonaws.cn/lambda/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">AWS Lambda</a>、
+                                <a href="https://www.amazonaws.cn/api-gateway/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon API Gateway</a>、
+                                <a href="https://www.amazonaws.cn/cloudwatch/" target="_blank"
+                                    style="background-color: rgb(255,255,255);">Amazon CloudWatch</a>
                             </div>
-
-
-							<div>
-                                <p class="solution-sub-title">涉及到的服务:</p>	
-                                <img src="../assets/img/msp/tca.jpg" style="padding-bottom: 20px;">
+                            <div style="text-align: center;margin-top: 40px;">
+                                <img src="../assets/img/msp/qx-d.png" style="width:880px;">
+                                <br />
+                                <em style="margin-top:20px">图 1 齐心集团基于AWS的无服务器架构示意图</em>
                             </div>
-
-							<div>
-                                <p class="solution-sub-title">托管架构图:</p>	
-                                <div style="text-align: center;"><img src="../assets/img/msp/qx-a.jpg" style="padding-bottom: 20px;"></div>
+                            <p style="color: #333;font-size: 14px;margin-top:40px">
+                                项目中，AWS团队帮助IT团队对AWS上云业务成本投入规划和优化方案进行了详细分析，同时对各类问题和需求给出了非常好的解答和业务解决方案。在改造过程中，帮助齐心集团引入合作伙伴，用Python重写接入层，成功解决了Java冷启动的问题，进一步优化了无服务器架构。其专业、细致的服务支持令齐心集团印象深刻。<br>
+                            </p>
+                            <h6 style="color:#232f3e;font-weight: bold;font-size:20px">获得的收益</h6>
+                            <p style="color: #333;font-size: 14px;">目前，基于AWS无服务器计算架构构建的、以API为核心特征的齐心开放平台(QOP
+                                3.0)已承载了齐心集团80%以上的线上业务。史海涛坦言，“从零开始做全新的架构是不小的挑战。在这个过程中，AWS专家服务团队开展了大量引导、指导性工作，帮助我们完成了平滑过渡。很明显，新平台带来的是质的飞跃。”<br>
+                                史海涛认为，使用AWS无服务器计算架构，齐心集团获得的收益主要表现在以下几方面：<br>
+                                首先，大幅提升了项目对接效率和客户服务水平。过去，齐心集团面向B端客户的技术解决方案需要点对点地执行，一个标准的完整项目前后需要近三个月时间完成。切换到AWS云后，最快三天时间即可完成新的客户对接项目，最长则不会超过一个月，通常会在20个工作日内完成。真正实现了“技术解决方案产品化、项目对接服务化”的设计目标。<br>
+                                其次，系统平台兼备高可用性和完善的容错机制，运维管理压力得到充分释放。IT团队多年来积累的数千个项目，无论大小，都需要完整考虑高可用性、数据完整性等问题。转向无服务器架构后，前端管控平台可实现自动化监控提醒，如发现异常即第一时间通知团队。同时，AWS云强大的弹性伸缩能力可确保业务无忧，兼顾效率和成本。据测算，从开始使用基于AWS平台的无服务器架构至今，TCO整体下降了25%。<br>
+                                再次，无服务器计算将整个技术栈解耦，大幅降低了应用门槛和操作难度。现在IT团队的管培生经过简单培训即可直接参与项目开发。齐心集团通过使用AWS，真正意义上实现了云原生开发。利用AWS成熟的经验，快速嫁接、构建整体技术架构，并在其基础上快速创新，加速产品数字化创意落地。“AWS带来的不仅是各种产品功能、基础架构资源，其积木式的技术方案框架和敏捷创新方法更具说服力，深刻影响了整个IT团队的思维模式。”史海涛如是说。<br>
+                                未来，齐心集团计划将一些新的应用，包括一些传统方式下做得比较“重”的应用，借助AWS的产品服务适当地进行重构。“IT团队更看重如何更好地结合AWS产品技术发展，重构下一代应用和系统，进一步提升业务效率。”史海涛总结道，“包括后期运维成本的持续优化，扎实的业务保障优势延续等都是团队持续关注的方向。最重要的是，AWS的云原生解决方案架构设计带来的创新思路可以不断吸引技术团队投入，为业务端创造更多价值。”<br>
+                                <br>
+                            </p>
+                            <div class="flex-layout" style="border-top: 1px #ccc solid">
+                                <div class="flex-layout-column">
+                                    <h6 style="color:#232f3e;font-weight: bold;font-size:20px">关于齐心集团</h6>
+                                    <p style="color: #333;font-size: 14px;">
+                                        <span style="color: #007eb9;">深圳齐心集团股份有限公司</span>
+                                        （以下简称“齐心集团”）专注政企采购服务20余年，于2009年在深圳A股成功上市，是中国B2B办公物资服务和云视频的龙头企业，服务全球120多个国家和地区。
+                                    </p>
+                                </div>
+                                <div style="margin-left:30px">
+                                    <h6 style="color:#232f3e;font-weight: bold;font-size:20px">为什么使用AWS</h6>
+                                    <ul style="font-size:14px;text-indent:10px;color: #333;">
+                                        <li>全球化布局支持业务快速扩张</li>
+                                        <li>有效降低资源使用成本和运维成本</li>
+                                        <li>创新基因和持续优化方法论</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </section>
+            <!-- End / Section -->
 
 
-						</section>
+        </div>
+        <!-- End / Content-->
 
-					</div>
-				</section>
-				<!-- End / Section -->
+        <!-- footer -->
+        <div class="footer">
+            <div id="back-to-top"><i class="pe-7s-angle-up"></i></div>
+            <div class="container">
+
+                <div class="footer__wrapper">
+
+                    <div class="footer__social">
+
+                        <!-- social-icon -->
+                        <a class="social-icon" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+                        </a><!-- End / social-icon -->
 
 
-			</div>
-			<!-- End / Content-->
-			
-			<!-- footer -->
-			<div class="footer">
-				<div id="back-to-top"><i class="pe-7s-angle-up"></i></div>
-				<div class="container">
+                        <!-- social-icon -->
+                        <a class="social-icon" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+                        </a><!-- End / social-icon -->
 
-					<div class="footer__wrapper">
 
-						<div class="footer__social">
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-facebook"></i>
-										</a><!-- End / social-icon -->
-										
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-twitter"></i>
-										</a><!-- End / social-icon -->
-										
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
-										</a><!-- End / social-icon -->
-										
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-behance"></i>
-										</a><!-- End / social-icon -->
-										
-										
-										<!-- social-icon -->
-										<a class="social-icon" href="#"><i class="social-icon__icon fa fa-vimeo"></i>
-										</a><!-- End / social-icon -->
-										
-						</div>
+                        <!-- social-icon -->
+                        <a class="social-icon" href="#"><i class="social-icon__icon fa fa-linkedin"></i>
+                        </a><!-- End / social-icon -->
 
-						<p class="footer__copy">Copyright @ 深圳市博思云为科技有限公司    <a href="http://www.beian.miit.gov.cn" style="color:white">粤ICP备16041562号-1</a></p>
-	
 
-					</div>
-				</div>
-			</div><!-- End / footer -->
-			<div id="link-to-top"><i class="pe-7s-angle-up"></i></div>
-		</div>
-		<!-- Vendors-->
-		<script type="text/javascript" src="../assets/vendors/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery.easing/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
-		<script type="text/javascript" src="../assets/vendors/swiper/swiper.jquery.js"></script>
-		<!-- <script type="text/javascript" src="../assets/vendors/menu/menu.js"></script> -->
-		<script type="text/javascript" src="../assets/vendors/typed/typed.min.js"></script>
-		<!-- App-->
-		<script type="text/javascript" src="../assets/js/main.js"></script>
-		<script type="text/javascript" src="../assets/js/sub.js"></script>
-	</body>
+                        <!-- social-icon -->
+                        <a class="social-icon" href="#"><i class="social-icon__icon fa fa-behance"></i>
+                        </a><!-- End / social-icon -->
+
+
+                        <!-- social-icon -->
+                        <a class="social-icon" href="#"><i class="social-icon__icon fa fa-vimeo"></i>
+                        </a><!-- End / social-icon -->
+
+                    </div>
+
+                    <p class="footer__copy">Copyright @ 深圳市博思云为科技有限公司 <a href="http://www.beian.miit.gov.cn"
+                            style="color:white">粤ICP备16041562号-1</a></p>
+
+
+                </div>
+            </div>
+        </div><!-- End / footer -->
+        <div id="link-to-top"><i class="pe-7s-angle-up"></i></div>
+    </div>
+    <!-- Vendors-->
+    <script type="text/javascript" src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="../assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="../assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+    <script type="text/javascript" src="../assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="../assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="../assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="../assets/vendors/swiper/swiper.jquery.js"></script>
+    <!-- <script type="text/javascript" src="../assets/vendors/menu/menu.js"></script> -->
+    <script type="text/javascript" src="../assets/vendors/typed/typed.min.js"></script>
+    <!-- App-->
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/sub.js"></script>
+</body>
+
 </html>

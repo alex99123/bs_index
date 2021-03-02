@@ -1,306 +1,336 @@
 /* 滚动条凹槽的颜色，还可以设置边框属性 */
 .modalBody::-webkit-scrollbar-track-piece {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
 /* 滚动条的宽度 */
 .modalBody::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+	width: 0;
+	height: 0;
 }
 
 /* 滚动条的设置 */
 .modalBody::-webkit-scrollbar-thumb {
-    background-color: #dddddd;
-    background-clip: padding-box;
-    min-height: 28px;
+	background-color: #dddddd;
+	background-clip: padding-box;
+	min-height: 28px;
 }
 
 .modalBody::-webkit-scrollbar-thumb:hover {
-    background-color: #bbb;
+	background-color: #bbb;
 }
 
 .modalWrap {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, .9);
-    overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.9);
+	overflow: hidden;
 }
 
 .modalContent {
-    width: 80%;
-    /* height: 800px; */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -40%;
-    /* margin-top: -400px; */
-    padding: 0 120px;
-    font: normal 12px/24px "微软雅黑", Arial, Helvetica, sans-serif;
-    color: #333;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 20px 4px #ccc;
+	width: 80%;
+	/* height: 800px; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40%;
+	/* margin-top: -400px; */
+	padding: 0 120px;
+	font: normal 12px/24px "微软雅黑", Arial, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 20px 4px #ccc;
 }
 
 .modalHead {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 .modalHead span {
-    font-size: 1.5em;
-    line-height: 2;
-    font-weight: bolder;
-    transition: all .2s ease-in-out;
+	font-size: 1.5em;
+	line-height: 2;
+	font-weight: bolder;
+	transition: all 0.2s ease-in-out;
 }
 
 .modalHead span:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: -40px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: -40px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
 }
 
 .modalHead span:nth-child(2):hover {
-    background: rgba(211, 211, 211, .2);
+	background: rgba(211, 211, 211, 0.2);
 }
 
 .modalBody {
-    padding: 10px 50px;
-    /* height: 800px; */
-    overflow-y: auto;
+	padding: 10px 50px;
+	/* height: 800px; */
+	overflow-y: auto;
 }
 
 @media screen and (min-width: 800px) {
-    .modalContent, .modalBody {
-        height: 400px;
-    }
-    .modalContent {
-        margin-top: -200px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 400px;
+	}
+	.modalContent {
+		margin-top: -200px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    .modalContent, .modalBody {
-        height: 400px;
-    }
-    .modalContent {
-        margin-top: -200px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 400px;
+	}
+	.modalContent {
+		margin-top: -200px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
-    .modalContent, .modalBody {
-        height: 400px;
-    }
-    .modalContent {
-        margin-top: -200px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 400px;
+	}
+	.modalContent {
+		margin-top: -200px;
+	}
 }
 
 @media screen and (min-width: 1440px) {
-    .modalContent, .modalBody {
-        height: 600px;
-    }
-    .modalContent {
-        margin-top: -300px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 600px;
+	}
+	.modalContent {
+		margin-top: -300px;
+	}
 }
 
 @media screen and (min-width: 1920px) {
-    .modalContent, .modalBody {
-        height: 800px;
-    }
-    .modalContent {
-        margin-top: -400px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 800px;
+	}
+	.modalContent {
+		margin-top: -400px;
+	}
 }
 
-
 @media screen and (min-width: 2160px) {
-    .modalContent, .modalBody {
-        height: 800px;
-    }
-    .modalContent {
-        margin-top: -400px;
-    }
+	.modalContent,
+	.modalBody {
+		height: 800px;
+	}
+	.modalContent {
+		margin-top: -400px;
+	}
 }
 
 .modalBody .modalTitle {
-    font-size: 18px;
-    line-height: 2;
+	font-size: 18px;
+	line-height: 2;
 }
 
 .mainPararaph {
-    font-size: 16px;
-    line-height: 2;
-    padding: 0 20px;
+	font-size: 16px;
+	line-height: 2;
+	padding: 0 20px;
 }
 
 .mainPararaph img {
-    display: block;
-    width: 500px;
-    height: 250px;
-    margin: 0 auto;
+	display: block;
+	width: 500px;
+	height: 250px;
+	margin: 0 auto;
 }
 
 .mainPararaph .solution_ai_img {
-    height: 420px;
+	height: 420px;
 }
 
 .textIndent2em {
-    text-indent: 2em;
+	text-indent: 2em;
 }
 
 .subContent {
-    padding: 0 40px;
+	padding: 0 40px;
 }
 
 .subContent p {
-    font-size: 14px;
-    line-height: 2;
+	font-size: 14px;
+	line-height: 2;
 }
 
 /* banner */
 .pages-banner {
-    width: 100%;
-    height: 400px;
-    margin-top: 73px;
-    background: url("../img/bg/pages-banner.jpg") no-repeat scroll center top;
-    display: table;
+	width: 100%;
+	height: 400px;
+	margin-top: 73px;
+	background: url("../img/bg/pages-banner.jpg") no-repeat scroll center top;
+	display: table;
 }
 
 .pages-banner-content {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .pages-banner h1.banner-title {
-    color: #73ffe3;
-    margin-bottom: 15px;
-    font-size: 40px;
-    line-height: 44px;
-    position: relative;
-    opacity: 1;
-    right: 0;
+	color: #73ffe3;
+	margin-bottom: 15px;
+	font-size: 40px;
+	line-height: 44px;
+	position: relative;
+	opacity: 1;
+	right: 0;
 }
 
 .pages-banner .banner-content {
-    position: relative;
-    opacity: 1;
-    left: 0;
+	position: relative;
+	opacity: 1;
+	left: 0;
 }
 
 .lead {
-    font-family: 'OpenSansLight';
-    font-size: 22px;
-    line-height: 32px;
+	font-family: "OpenSansLight";
+	font-size: 22px;
+	line-height: 32px;
 }
 
 .bc-content {
-    background: rgba(255, 255, 255, .6);
+	background: rgba(255, 255, 255, 0.6);
 }
 
 /* bread crumb */
 .breadcrumb ul {
-    color: #2d343e;
-    padding: 20px 0;
+	color: #2d343e;
+	padding: 20px 0;
 }
 
 .breadcrumb ul li {
-    display: inline-block;
-    vertical-align: middle;
-    list-style-type: none;
-    position: relative;
-    font-size: 14px;
-    line-height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	list-style-type: none;
+	position: relative;
+	font-size: 14px;
+	line-height: 25px;
 }
 
 .breadcrumb ul li:not(:nth-child(1)) {
-    padding-left: 30px;
+	padding-left: 30px;
 }
 
 .breadcrumb ul li:first-child a {
-    width: 2em;
-    height: 2em;
-    display: block;
-    background: url("../img/common/home.png") no-repeat center;
+	width: 2em;
+	height: 2em;
+	display: block;
+	background: url("../img/common/home.png") no-repeat center;
 }
 
 .breadcrumb ul li:first-child a:hover {
-    background: url("../img/common/home-active.png") no-repeat center;
+	background: url("../img/common/home-active.png") no-repeat center;
 }
 
 .breadcrumb ul li:not(first-child) a {
-    color: #2d343e;
+	color: #2d343e;
 }
 
 .breadcrumb ul li:not(first-child) a:hover {
-    color: #0561a0;
+	color: #0561a0;
 }
 
 .breadcrumb ul li:not(:nth-child(1)):after {
-    content: "";
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    background: url("../img/common/angle-right.png") no-repeat center;
-    position: absolute;
-    left: 6px;
-    top: 6px;
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url("../img/common/angle-right.png") no-repeat center;
+	position: absolute;
+	left: 6px;
+	top: 6px;
 }
 
 /* solution pages */
 .solution {
-    padding: 50px;
-    font-size: 16px;
-    color: #000;
+	padding: 50px;
+	font-size: 16px;
+	color: #000;
 }
 
 .solution .solution-title {
-    font-size: 18px;
-    font-weight: bolder;
-    line-height: 2;
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 2;
 }
 
 .solution .solution-sub-title {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 .solution ul {
-    list-style: disc;
-    list-style-position: inside;
-    text-indent: 2em;
+	list-style: disc;
+	list-style-position: inside;
+	text-indent: 2em;
 }
 
 .solution .solution-paragraph {
-    text-indent: 2em;
+	text-indent: 2em;
 }
 
 .solution .solution-img img {
-    display: block;
-    width: 70%;
-    /*height: 400px;*/
-    margin: 10px auto;
+	display: block;
+	width: 70%;
+	/*height: 400px;*/
+	margin: 10px auto;
 }
-
 
 /* migration pages */
 .container-right {
-    background: #fff;
-    display: inline;
-    padding-left: 35%;
-    padding-top: 4px;
+	background: #fff;
+	display: inline;
+	padding-left: 35%;
+	padding-top: 4px;
 }
 
-
-
-
-
+.flex-layout {
+	display: flex;
+}
+.flex-layout div {
+	flex: 1;
+}
+.link-hover{
+    font-size: 14px;
+}
+.link-hover a{
+	color: #007eb9;
+}
+.link-hover a:hover{
+    color: #e47911;
+    text-decoration: underline;
+}
+.flex-layout-column{
+    display: flex;
+    flex-direction: column;
+}
+.csection p{
+    color: #333;
+    font-size:14px;
+}
+.csection h6{
+    color:#232f3e;
+    font-weight: 700;
+    font-size:25px;
+    margin-top: 45px;
+}
