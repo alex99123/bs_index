@@ -91,6 +91,9 @@ def MspList():
 def product():
     return render_template('product.html')
 
+@application.route('/followme.html')
+def followme():
+    return render_template('followme.html')
 
 if __name__ == "__main__":
     application.debug = True
