@@ -188,7 +188,7 @@
 }
 
 .pages-banner h1.banner-title {
-	color: #73ffe3;
+	color: #000;
 	margin-bottom: 15px;
 	font-size: 40px;
 	line-height: 44px;
@@ -201,6 +201,7 @@
 	position: relative;
 	opacity: 1;
 	left: 0;
+	color: #454744;
 }
 
 .lead {
